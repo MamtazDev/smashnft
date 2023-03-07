@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import DateSelect from "../../components/DateSelect";
 import PaginationClassic from "../../components/PaginationClassic";
 import Header from "../../partials/Header";
 import Sidebar from "../../partials/Sidebar";
 
-const BidRecords = () => {
-    const [sidebarOpen, setSidebarOpen] = useState(false);
-    const [selectedItems, setSelectedItems] = useState([]);
-  
-    const handleSelectedItems = (selectedItems) => {
-      setSelectedItems([...selectedItems]);
-    };
-    return (
-        <div className="flex h-screen overflow-hidden">
+const AuctionTransaction = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [selectedItems, setSelectedItems] = useState([]);
+
+  const handleSelectedItems = (selectedItems) => {
+    setSelectedItems([...selectedItems]);
+  };
+  return (
+    <div className="flex h-screen overflow-hidden">
       {/* Sidebar */}
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
@@ -28,7 +28,7 @@ const BidRecords = () => {
               {/* Left: Title */}
               <div className="mb-4 sm:mb-0">
                 <h1 className="text-2xl md:text-3xl text-slate-800 font-bold">
-                  Bid Records ✨
+                  Auction Transactions ✨
                 </h1>
               </div>
 
@@ -64,11 +64,27 @@ const BidRecords = () => {
                       <div className="font-semibold text-left">Chain</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">Auction record</div>
+                      <div className="font-semibold text-left">TXID</div>
                     </th>
 
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">ID</div>
+                      <div className="font-semibold text-left">
+                        Successful bidder
+                      </div>
+                    </th>
+                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                      <div className="font-semibold text-left">Auctioneer</div>
+                    </th>
+                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                      <div className="font-semibold text-left">Token</div>
+                    </th>
+                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                      <div className="font-semibold text-left">
+                        Token amount
+                      </div>
+                    </th>
+                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                      <div className="font-semibold">Commodity ID</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="font-semibold text-left">Trade name</div>
@@ -76,77 +92,22 @@ const BidRecords = () => {
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="font-semibold text-left">Preview</div>
                     </th>
+
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="font-semibold text-left">
-                   Participant
+                        Participation record
                       </div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold">Consume tokens</div>
+                      <div className="font-semibold text-left">
+                        Creation time
+                      </div>
                     </th>
-                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">Amount of money</div>
-                    </th>
-                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">Result</div>
-                    </th>
-
-                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">Participation time</div>
-                    </th>
-
-                    
                   </tr>
                 </thead>
 
-                {/* Table body */}
-                <tbody className="text-sm">
-                  <tr>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>BSCTest</div>
-                    </td>
-
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>1</div>
-                    </td>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>17</div>
-                    </td>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>css</div>
-                    </td>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="w-10 h-10 shrink-0 flex items-center justify-center bg-slate-100 rounded-full mr-2 sm:mr-3">
-                        <img
-                          className="ml-1"
-                          src="https://avatars.githubusercontent.com/u/6250754?s=200&v=4"
-                          width="50"
-                          height="50"
-                        />
-                      </div>
-                    </td>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className='text-red-600'>0xjhh..jhhjk</div>
-                    </td>
-
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>CPC</div>
-                    </td>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>25</div>
-                    </td>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className='bg-gray-300 rounded-lg p-2'>Not winning the bid</div>
-                    </td>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>2022-01-25</div>
-                    </td>
-                  
-
-                    
-                  </tr>
-                </tbody>
               </table>
+               <input className="text-center w-full my-8 py-2" type="text" placeholder="No data" />
             </div>
 
             {/* Pagination */}
@@ -157,7 +118,7 @@ const BidRecords = () => {
         </main>
       </div>
     </div>
-    );
+  );
 };
 
-export default BidRecords;
+export default AuctionTransaction;

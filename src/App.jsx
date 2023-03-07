@@ -82,6 +82,8 @@ import RoyaltiesStatistics from "./pages/ecommerce/RoyaltiesStatistics";
 import OfficialProducts from "./pages/ecommerce/OfficialProducts";
 import StartAuction from "./pages/ecommerce/StartAuction";
 import AuctionRecords from "./pages/ecommerce/AuctionRecords";
+import BidRecords from "./pages/ecommerce/BidRecords";
+import AuctionTransaction from "./pages/ecommerce/AuctionTransaction";
 
 function App() {
   const location = useLocation();
@@ -114,6 +116,8 @@ function App() {
         <Route path="/ecommerce/official-products" element={<OfficialProducts />} />
         <Route path="/ecommerce/start-auction" element={<StartAuction />} />
         <Route path="/ecommerce/auction-record" element={<AuctionRecords />} />
+        <Route path="/ecommerce/bid-record" element={<BidRecords />} />
+        <Route path="/ecommerce/auction-transaction" element={<AuctionTransaction />} />
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />
         <Route path="/ecommerce/cart-3" element={<Cart3 />} />
