@@ -86,6 +86,7 @@ import BidRecords from "./pages/ecommerce/BidRecords";
 import AuctionTransaction from "./pages/ecommerce/AuctionTransaction";
 import UserInformation from "./pages/community/UserInformation";
 import CollectionRecords from "./pages/ecommerce/CollectionRecords";
+import CommodityGrp from "./pages/ecommerce/CommodityGrp";
 
 
 
@@ -123,6 +124,7 @@ function App() {
         <Route path="/ecommerce/bid-record" element={<BidRecords />} />
         <Route path="/ecommerce/auction-transaction" element={<AuctionTransaction />} />
         <Route path="/ecommerce/collection-records" element={<CollectionRecords />} />
+        <Route path="/ecommerce/commodity-grp" element={<CommodityGrp />} />
        
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />
