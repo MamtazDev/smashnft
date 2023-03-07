@@ -92,7 +92,7 @@ function SettingsSidebar() {
                     : "hover:text-slate-700"
                 }`}
               >
-                My Notifications
+               Notifications switch
               </span>
             </NavLink>
           </li>
