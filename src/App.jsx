@@ -84,6 +84,10 @@ import StartAuction from "./pages/ecommerce/StartAuction";
 import AuctionRecords from "./pages/ecommerce/AuctionRecords";
 import BidRecords from "./pages/ecommerce/BidRecords";
 import AuctionTransaction from "./pages/ecommerce/AuctionTransaction";
+import UserInformation from "./pages/community/UserInformation";
+import CollectionRecords from "./pages/ecommerce/CollectionRecords";
+
+
 
 function App() {
   const location = useLocation();
@@ -118,6 +122,8 @@ function App() {
         <Route path="/ecommerce/auction-record" element={<AuctionRecords />} />
         <Route path="/ecommerce/bid-record" element={<BidRecords />} />
         <Route path="/ecommerce/auction-transaction" element={<AuctionTransaction />} />
+        <Route path="/ecommerce/collection-records" element={<CollectionRecords />} />
+       
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />
         <Route path="/ecommerce/cart-3" element={<Cart3 />} />
@@ -125,6 +131,7 @@ function App() {
         <Route path="/campaigns" element={<Campaigns />} />
         <Route path="/community/users-tabs" element={<UsersTabs />} />
         <Route path="/community/users-tiles" element={<UsersTiles />} />
+        <Route path="/community/user-information" element={<UserInformation />} />
         <Route path="/community/profile" element={<Profile />} />
         <Route path="/community/feed" element={<Feed />} />
         <Route path="/community/forum" element={<Forum />} />

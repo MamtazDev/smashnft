@@ -343,7 +343,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               }
                             >
                               <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                            Product list
+                                Product list
                               </span>
                             </NavLink>
                           </li>
@@ -427,7 +427,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               }
                             >
                               <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                           Royalty Income
+                                Royalty Income
                               </span>
                             </NavLink>
                           </li>
@@ -441,7 +441,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               }
                             >
                               <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                           Royalties paid
+                                Royalties paid
                               </span>
                             </NavLink>
                           </li>
@@ -455,7 +455,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               }
                             >
                               <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                           Royalties statistics
+                                Royalties statistics
                               </span>
                             </NavLink>
                           </li>
@@ -469,7 +469,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               }
                             >
                               <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                          Official Products
+                                Official Products
                               </span>
                             </NavLink>
                           </li>
@@ -483,7 +483,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               }
                             >
                               <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                         Start Auction
+                                Start Auction
                               </span>
                             </NavLink>
                           </li>
@@ -497,7 +497,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               }
                             >
                               <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                          Auction Records
+                                Auction Records
                               </span>
                             </NavLink>
                           </li>
@@ -511,7 +511,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               }
                             >
                               <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                          Bid Records
+                                Bid Records
                               </span>
                             </NavLink>
                           </li>
@@ -525,7 +525,21 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               }
                             >
                               <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                        Auction Transaction
+                                Auction Transaction
+                              </span>
+                            </NavLink>
+                          </li>
+                          <li className="mb-1 last:mb-0">
+                            <NavLink
+                              end
+                              to="/ecommerce/collection-records"
+                              className={({ isActive }) =>
+                                "block text-slate-400 hover:text-slate-200 transition duration-150 truncate " +
+                                (isActive ? "!text-indigo-500" : "")
+                              }
+                            >
+                              <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                              Collection Records
                               </span>
                             </NavLink>
                           </li>
@@ -707,6 +721,20 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       </a>
                       <div className="lg:hidden lg:sidebar-expanded:block 2xl:block">
                         <ul className={`pl-9 mt-1 ${!open && "hidden"}`}>
+                          <li className="mb-1 last:mb-0">
+                            <NavLink
+                              end
+                              to="/community/user-information"
+                              className={({ isActive }) =>
+                                "block text-slate-400 hover:text-slate-200 transition duration-150 truncate " +
+                                (isActive ? "!text-indigo-500" : "")
+                              }
+                            >
+                              <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                                Users Information
+                              </span>
+                            </NavLink>
+                          </li>
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
@@ -1370,7 +1398,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               }
                             >
                               <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                               Basic Information
+                                Basic Information
                               </span>
                             </NavLink>
                           </li>
