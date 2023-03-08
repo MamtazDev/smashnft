@@ -92,6 +92,7 @@ import AddInformation from "./pages/ecommerce/AddInformation";
 import ArticleTable from "./pages/ecommerce/ArticleTable";
 import SupportType from "./pages/ecommerce/SupportType";
 import AddSupport from "./pages/ecommerce/AddSupport";
+import SupportRecords from "./pages/settings/SupportRecords";
 
 
 
@@ -165,6 +166,7 @@ function App() {
         <Route path="/inbox" element={<Inbox />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/settings/account" element={<Account />} />
+        <Route path="/settings/support-records" element={<SupportRecords />} />
         <Route path="/settings/changePassword" element={<ChangePassword />} />
         <Route path="/settings/notifications" element={<Notifications />} />
         <Route path="/settings/apps" element={<Apps />} />
