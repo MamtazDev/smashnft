@@ -62,11 +62,11 @@ const SupportRecords = () => {
                           </select>
                         </div>
                         <div>
-                          <label for="">Title</label>
+                          <label className="mr-3" >Title</label>
                           <input type="text" />
                         </div>
                         <div>
-                          <label for="">Transfer ID (optional)</label>
+                          <label className="mr-3" >Transfer ID (optional)</label>
                           <input type="text" />
                         </div>
                       </div>

@@ -93,6 +93,7 @@ import ArticleTable from "./pages/ecommerce/ArticleTable";
 import SupportType from "./pages/ecommerce/SupportType";
 import AddSupport from "./pages/ecommerce/AddSupport";
 import SupportRecords from "./pages/settings/SupportRecords";
+import ContractTransaction from "./pages/ecommerce/ContractTransaction";
 
 
 
@@ -136,6 +137,7 @@ function App() {
         <Route path="/ecommerce/article" element={<ArticleTable />} />
         <Route path="/ecommerce/support-type" element={<SupportType />} />
         <Route path="/ecommerce/add-support" element={<AddSupport />} />
+        <Route path="/ecommerce/contract-transaction" element={<ContractTransaction />} />
        
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />
