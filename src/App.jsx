@@ -89,6 +89,8 @@ import CollectionRecords from "./pages/ecommerce/CollectionRecords";
 import CommodityGrp from "./pages/ecommerce/CommodityGrp";
 import InformationType from "./pages/ecommerce/InformationType";
 import AddInformation from "./pages/ecommerce/AddInformation";
+import ArticleTable from "./pages/ecommerce/ArticleTable";
+import SupportType from "./pages/ecommerce/SupportType";
 
 
 
@@ -129,6 +131,8 @@ function App() {
         <Route path="/ecommerce/commodity-grp" element={<CommodityGrp />} />
         <Route path="/ecommerce/information-type" element={<InformationType />} />
         <Route path="/ecommerce/add-info" element={<AddInformation />} />
+        <Route path="/ecommerce/article" element={<ArticleTable />} />
+        <Route path="/ecommerce/support-type" element={<SupportType />} />
        
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />
