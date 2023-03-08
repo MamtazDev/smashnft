@@ -87,6 +87,8 @@ import AuctionTransaction from "./pages/ecommerce/AuctionTransaction";
 import UserInformation from "./pages/community/UserInformation";
 import CollectionRecords from "./pages/ecommerce/CollectionRecords";
 import CommodityGrp from "./pages/ecommerce/CommodityGrp";
+import InformationType from "./pages/ecommerce/InformationType";
+import AddInformation from "./pages/ecommerce/AddInformation";
 
 
 
@@ -125,6 +127,8 @@ function App() {
         <Route path="/ecommerce/auction-transaction" element={<AuctionTransaction />} />
         <Route path="/ecommerce/collection-records" element={<CollectionRecords />} />
         <Route path="/ecommerce/commodity-grp" element={<CommodityGrp />} />
+        <Route path="/ecommerce/information-type" element={<InformationType />} />
+        <Route path="/ecommerce/add-info" element={<AddInformation />} />
        
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />
