@@ -91,6 +91,7 @@ import InformationType from "./pages/ecommerce/InformationType";
 import AddInformation from "./pages/ecommerce/AddInformation";
 import ArticleTable from "./pages/ecommerce/ArticleTable";
 import SupportType from "./pages/ecommerce/SupportType";
+import AddSupport from "./pages/ecommerce/AddSupport";
 
 
 
@@ -133,6 +134,7 @@ function App() {
         <Route path="/ecommerce/add-info" element={<AddInformation />} />
         <Route path="/ecommerce/article" element={<ArticleTable />} />
         <Route path="/ecommerce/support-type" element={<SupportType />} />
+        <Route path="/ecommerce/add-support" element={<AddSupport />} />
        
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />
