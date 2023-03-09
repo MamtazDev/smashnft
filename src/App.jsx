@@ -104,6 +104,7 @@ import MailConfiguration from "./pages/ecommerce/MailConfiguration";
 import SupportWallet from "./pages/ecommerce/SupportWallet";
 import Administrator from "./pages/ecommerce/Administrator";
 import RoleManagement from "./pages/ecommerce/RoleManagement";
+import MenuManagement from "./pages/ecommerce/MenuManagement";
 
 
 
@@ -151,6 +152,7 @@ function App() {
         <Route path="/ecommerce/contract-application" element={<ContractApplication />} />
         <Route path="/ecommerce/administrator" element={<Administrator />} />
         <Route path="/ecommerce/role-management" element={<RoleManagement />} />
+        <Route path="/ecommerce/menu-management" element={<MenuManagement />} />
         <Route path="/ecommerce/transaction-currency" element={<TransactionCurrency />} />
         <Route path="/ecommerce/language-management" element={<LanguageManagement />} />
         <Route path="/ecommerce/notification-types" element={<NotificationTypes />} />
