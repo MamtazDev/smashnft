@@ -98,6 +98,7 @@ import ContractApplication from "./pages/ecommerce/ContractApplication";
 import TransactionCurrency from "./pages/ecommerce/TransactionCurrency";
 import LanguageManagement from "./pages/ecommerce/LanguageManagement";
 import NotificationTypes from "./pages/ecommerce/NotificationTypes";
+import SystemConfiguration from "./pages/ecommerce/SystemConfiguration";
 
 
 
@@ -146,6 +147,7 @@ function App() {
         <Route path="/ecommerce/transaction-currency" element={<TransactionCurrency />} />
         <Route path="/ecommerce/language-management" element={<LanguageManagement />} />
         <Route path="/ecommerce/notification-types" element={<NotificationTypes />} />
+        <Route path="/ecommerce/system-configuration" element={<SystemConfiguration />} />
        
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />
