@@ -96,6 +96,7 @@ import SupportRecords from "./pages/settings/SupportRecords";
 import ContractTransaction from "./pages/ecommerce/ContractTransaction";
 import ContractApplication from "./pages/ecommerce/ContractApplication";
 import TransactionCurrency from "./pages/ecommerce/TransactionCurrency";
+import LanguageManagement from "./pages/ecommerce/LanguageManagement";
 
 
 
@@ -142,6 +143,7 @@ function App() {
         <Route path="/ecommerce/contract-transaction" element={<ContractTransaction />} />
         <Route path="/ecommerce/contract-application" element={<ContractApplication />} />
         <Route path="/ecommerce/transaction-currency" element={<TransactionCurrency />} />
+        <Route path="/ecommerce/language-management" element={<LanguageManagement />} />
        
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />
