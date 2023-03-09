@@ -106,6 +106,7 @@ import Administrator from "./pages/ecommerce/Administrator";
 import RoleManagement from "./pages/ecommerce/RoleManagement";
 import MenuManagement from "./pages/ecommerce/MenuManagement";
 import FileManagement from "./pages/ecommerce/FileManagement";
+import ConfigurationManagement from "./pages/ecommerce/ConfigurationManagement";
 
 
 
@@ -155,6 +156,7 @@ function App() {
         <Route path="/ecommerce/role-management" element={<RoleManagement />} />
         <Route path="/ecommerce/menu-management" element={<MenuManagement />} />
         <Route path="/ecommerce/file-management" element={<FileManagement />} />
+        <Route path="/ecommerce/configuration-management" element={<ConfigurationManagement />} />
         <Route path="/ecommerce/transaction-currency" element={<TransactionCurrency />} />
         <Route path="/ecommerce/language-management" element={<LanguageManagement />} />
         <Route path="/ecommerce/notification-types" element={<NotificationTypes />} />
