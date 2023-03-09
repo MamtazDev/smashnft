@@ -3,6 +3,9 @@ import DateSelect from "../../components/DateSelect";
 import PaginationClassic from "../../components/PaginationClassic";
 import Header from "../../partials/Header";
 import Sidebar from "../../partials/Sidebar";
+import { IoMdAdd } from "react-icons/io";
+import DeleteButton from "../../partials/actions/DeleteButton";
+import DropdownFilter from "../../components/DropdownFilter";
 
 const ConfigurationManagement = () => {
   const [comments, setComments] = useState(true);
@@ -36,10 +39,46 @@ const ConfigurationManagement = () => {
               {/* Right: Actions */}
               <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
                 {/* Delete button */}
-                {/* <DeleteButton selectedItems={selectedItems} /> */}
+                <DeleteButton selectedItems={selectedItems} />
                 {/* Dropdown */}
-                <DateSelect />
+                {/* <DateSelect /> */}
+                <div>
+                  <label className="mr-2" for="status">
+                    To
+                  </label>
+
+                  <select className="border-none" name="status" id="status">
+                    <option>Please select a configuration</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="mr-2" for="status">
+                    Bucket
+                  </label>
+                  <input
+                    className="border-none"
+                    type="text"
+                    placeholder="please enter bucket name"
+                  />
+                </div>
+                <div>
+                  <label className="mr-2" for="status">
+                    Status
+                  </label>
+
+                  <select className="border-none" name="status" id="status">
+                    <option>Please select status</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                  </select>
+                </div>
+
                 {/* Filter button */}
+                {/* <DropdownFilter /> */}
                 {/* <FilterButton align="right" /> */}
                 {/* Add customer button */}
                 <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
@@ -49,7 +88,7 @@ const ConfigurationManagement = () => {
                   >
                     <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
                   </svg>
-                  <span className="hidden xs:block ml-2">Add Order</span>
+                  <span className="hidden xs:block ml-2">Newly added</span>
                 </button>
               </div>
             </div>
