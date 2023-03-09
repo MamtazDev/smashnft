@@ -102,6 +102,7 @@ import SystemConfiguration from "./pages/ecommerce/SystemConfiguration";
 import CarouselPictures from "./pages/ecommerce/CarouselPictures";
 import MailConfiguration from "./pages/ecommerce/MailConfiguration";
 import SupportWallet from "./pages/ecommerce/SupportWallet";
+import Administrator from "./pages/ecommerce/Administrator";
 
 
 
@@ -147,6 +148,7 @@ function App() {
         <Route path="/ecommerce/add-support" element={<AddSupport />} />
         <Route path="/ecommerce/contract-transaction" element={<ContractTransaction />} />
         <Route path="/ecommerce/contract-application" element={<ContractApplication />} />
+        <Route path="/ecommerce/administrator" element={<Administrator />} />
         <Route path="/ecommerce/transaction-currency" element={<TransactionCurrency />} />
         <Route path="/ecommerce/language-management" element={<LanguageManagement />} />
         <Route path="/ecommerce/notification-types" element={<NotificationTypes />} />
