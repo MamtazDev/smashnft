@@ -99,6 +99,7 @@ import TransactionCurrency from "./pages/ecommerce/TransactionCurrency";
 import LanguageManagement from "./pages/ecommerce/LanguageManagement";
 import NotificationTypes from "./pages/ecommerce/NotificationTypes";
 import SystemConfiguration from "./pages/ecommerce/SystemConfiguration";
+import CarouselPictures from "./pages/ecommerce/CarouselPictures";
 
 
 
@@ -148,6 +149,7 @@ function App() {
         <Route path="/ecommerce/language-management" element={<LanguageManagement />} />
         <Route path="/ecommerce/notification-types" element={<NotificationTypes />} />
         <Route path="/ecommerce/system-configuration" element={<SystemConfiguration />} />
+        <Route path="/ecommerce/carousel-pictures" element={<CarouselPictures />} />
        
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />
