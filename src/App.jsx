@@ -101,6 +101,7 @@ import NotificationTypes from "./pages/ecommerce/NotificationTypes";
 import SystemConfiguration from "./pages/ecommerce/SystemConfiguration";
 import CarouselPictures from "./pages/ecommerce/CarouselPictures";
 import MailConfiguration from "./pages/ecommerce/MailConfiguration";
+import SupportWallet from "./pages/ecommerce/SupportWallet";
 
 
 
@@ -183,6 +184,7 @@ function App() {
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/settings/account" element={<Account />} />
         <Route path="/settings/support-records" element={<SupportRecords />} />
+        <Route path="/settings/support-wallet" element={<SupportWallet />} />
         <Route path="/settings/changePassword" element={<ChangePassword />} />
         <Route path="/settings/notifications" element={<Notifications />} />
         <Route path="/settings/apps" element={<Apps />} />
