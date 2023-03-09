@@ -100,6 +100,7 @@ import LanguageManagement from "./pages/ecommerce/LanguageManagement";
 import NotificationTypes from "./pages/ecommerce/NotificationTypes";
 import SystemConfiguration from "./pages/ecommerce/SystemConfiguration";
 import CarouselPictures from "./pages/ecommerce/CarouselPictures";
+import MailConfiguration from "./pages/ecommerce/MailConfiguration";
 
 
 
@@ -150,6 +151,7 @@ function App() {
         <Route path="/ecommerce/notification-types" element={<NotificationTypes />} />
         <Route path="/ecommerce/system-configuration" element={<SystemConfiguration />} />
         <Route path="/ecommerce/carousel-pictures" element={<CarouselPictures />} />
+        <Route path="/ecommerce/mail-configuration" element={<MailConfiguration />} />
        
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />
