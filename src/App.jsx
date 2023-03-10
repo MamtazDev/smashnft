@@ -123,6 +123,12 @@ function App() {
   return (
     <>
       <Routes>
+      <Route path="/login/home" element={<Shop />} />
+      <Route path="/login/account" element={<Account />} />
+      <Route path="/login/changePassword" element={<ChangePassword />} />
+
+
+      
         <Route exact path="/" element={<Dashboard />} />
         <Route path="/dashboard/analytics" element={<Analytics />} />
         <Route path="/dashboard/fintech" element={<Fintech />} />
@@ -132,7 +138,7 @@ function App() {
         <Route path="/ecommerce/auction" element={<Auction />} />
         <Route path="/ecommerce/transaction" element={<Transaction />} />
         <Route path="/ecommerce/invoices" element={<Invoices />} />
-        <Route path="/ecommerce/shop" element={<Shop />} />
+      
         <Route path="/ecommerce/shop-2" element={<Shop2 />} />
         <Route path="/ecommerce/product" element={<Product />} />
         <Route path="/ecommerce/bid" element={<BidHistory />} />
@@ -193,11 +199,11 @@ function App() {
         <Route path="/tasks/list" element={<TasksList />} />
         <Route path="/inbox" element={<Inbox />} />
         <Route path="/calendar" element={<Calendar />} />
-        <Route path="/login/account" element={<Account />} />
+      
         <Route path="/settings/support-records" element={<SupportRecords />} />
         <Route path="/settings/support-record-table" element={<SupportRecordTable />} />
         <Route path="/settings/support-wallet" element={<SupportWallet />} />
-        <Route path="/login/changePassword" element={<ChangePassword />} />
+     
         <Route path="/settings/notifications" element={<Notifications />} />
         <Route path="/settings/apps" element={<Apps />} />
         <Route path="/settings/plans" element={<Plans />} />
