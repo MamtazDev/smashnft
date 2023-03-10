@@ -4,7 +4,7 @@ import PaginationClassic from "../../components/PaginationClassic";
 import Header from "../../partials/Header";
 import Sidebar from "../../partials/Sidebar";
 
-const ContractTransaction = () => {
+const SupportRecordTable = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [selectedItems, setSelectedItems] = useState([]);
 
@@ -28,7 +28,7 @@ const ContractTransaction = () => {
               {/* Left: Title */}
               <div className="mb-4 sm:mb-0">
                 <h1 className="text-2xl md:text-3xl text-slate-800 font-bold">
-                  Contract Transaction ✨
+                  Support Record✨
                 </h1>
               </div>
 
@@ -45,49 +45,24 @@ const ContractTransaction = () => {
               </div>
               <div>
                 <label className="mr-2" for="status">
-                  Commodity
+                  Wallet address
                 </label>
                 <input
                   className="border-none"
                   type="text"
-                  placeholder="please enter productID"
+                  placeholder="please enter wallet address"
                 />
               </div>
               <div>
                 <label className="mr-2" for="status">
-                  TxHash
+                  Status
                 </label>
-                <input
-                  className="border-none"
-                  type="text"
-                  placeholder="please enter Transaction hash"
-                />
-              </div>
-              <div>
-                <label className="mr-2" for="status">
-                  TokenId
-                </label>
-                <input
-                  className="border-none"
-                  type="text"
-                  placeholder="please enter Token Id"
-                />
-              </div>
-              <div>
-                <label className="mr-2" for="status">
-                  Transaction user
-                </label>
-                <input
-                  className="border-none"
-                  type="text"
-                  placeholder="please enter to"
-                />
-              </div>
-              <div>
-                <label className="mr-2" for="status">
-                  Trading time
-                </label>
-                <input className="border-none" type="date" />
+                <select className="border-none" name="status" id="status">
+                  <option>Please select a status</option>
+                  <option>A</option>
+                  <option>B</option>
+                  <option>C</option>
+                </select>
               </div>
             </div>
 
@@ -99,55 +74,31 @@ const ContractTransaction = () => {
                 <thead className="text-xs uppercase text-slate-500 bg-slate-50 border-t border-slate-200">
                   <tr>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                      <div className="font-semibold text-left">Email</div>
+                    </th>
+                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                      <div className="font-semibold text-left">Title</div>
+                    </th>
+
+                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                      <div className="font-semibold text-left">
+                        Wallet address
+                      </div>
+                    </th>
+                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="font-semibold text-left">Chain</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">CommodityID</div>
-                    </th>
-
-                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">TokenID</div>
+                      <div className="font-semibold text-left">Describe</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="font-semibold text-left">
-                        contract address
+                        Attached documents
                       </div>
                     </th>
-                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">TxHash</div>
-                    </th>
+
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="font-semibold text-left">Operation</div>
-                    </th>
-                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold">From</div>
-                    </th>
-                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">To</div>
-                    </th>
-                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">Amount</div>
-                    </th>
-                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">
-                        Contract type
-                      </div>
-                    </th>
-                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">
-                        Block height
-                      </div>
-                    </th>
-                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">
-                        Trading time
-                      </div>
-                    </th>
-
-                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">
-                        Synchronization time
-                      </div>
                     </th>
                   </tr>
                 </thead>
@@ -156,47 +107,28 @@ const ContractTransaction = () => {
                 <tbody className="text-sm">
                   <tr>
                     <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>BSCTest</div>
+                      <div>...@gmail.com</div>
                     </td>
 
                     <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>12</div>
+                      <div>2556552476986</div>
                     </td>
                     <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>7</div>
-                    </td>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="text-red-600">0xjhhg...jhgg</div>
-                    </td>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="text-red-600">0xjhhg...jhgg</div>
-                    </td>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="text-red-600">0xjhhg...jhgg</div>
-                    </td>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="text-red-600">0xjhhg...jhgg</div>
+                      <div>fhttyrgf</div>
                     </td>
 
                     <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="text-red-600">0xjhh..jhhjk</div>
+                      <div></div>
+                    </td>
+                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                      <div>dfgfhgfhjjhnmnm</div>
+                    </td>
+                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                      <div></div>
                     </td>
 
                     <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>1</div>
-                    </td>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>ERC1155</div>
-                    </td>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>154258896</div>
-                    </td>
-
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>2022-01-25</div>
-                    </td>
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div>2022-01-25</div>
+                      <div className="text-blue-600">Delete</div>
                     </td>
                   </tr>
                 </tbody>
@@ -214,4 +146,4 @@ const ContractTransaction = () => {
   );
 };
 
-export default ContractTransaction;
+export default SupportRecordTable;

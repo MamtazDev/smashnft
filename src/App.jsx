@@ -107,6 +107,7 @@ import RoleManagement from "./pages/ecommerce/RoleManagement";
 import MenuManagement from "./pages/ecommerce/MenuManagement";
 import FileManagement from "./pages/ecommerce/FileManagement";
 import ConfigurationManagement from "./pages/ecommerce/ConfigurationManagement";
+import SupportRecordTable from "./pages/settings/SupportRecordTable";
 
 
 
@@ -194,6 +195,7 @@ function App() {
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/settings/account" element={<Account />} />
         <Route path="/settings/support-records" element={<SupportRecords />} />
+        <Route path="/settings/support-record-table" element={<SupportRecordTable />} />
         <Route path="/settings/support-wallet" element={<SupportWallet />} />
         <Route path="/settings/changePassword" element={<ChangePassword />} />
         <Route path="/settings/notifications" element={<Notifications />} />
