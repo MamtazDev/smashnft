@@ -158,8 +158,13 @@ function App() {
         <Route path="/user/commodity-grp" element={<CommodityGrp />} />
         <Route path="/user/notification-switch" element={<Notifications />} />
 
-
-
+        <Route
+          path="/content/information-type"
+          element={<InformationType />}
+        />
+          <Route path="/content/article-management" element={<ArticleTable />} />
+          <Route path="/content/support-type" element={<SupportType />} />
+          <Route path="/content/support-records" element={<SupportRecords />} />
 
 
 
@@ -179,13 +184,10 @@ function App() {
 
         <Route path="/ecommerce/start-auction" element={<StartAuction />} />
 
-        <Route
-          path="/ecommerce/information-type"
-          element={<InformationType />}
-        />
+      
         <Route path="/ecommerce/add-info" element={<AddInformation />} />
-        <Route path="/ecommerce/article" element={<ArticleTable />} />
-        <Route path="/ecommerce/support-type" element={<SupportType />} />
+      
+     
         <Route path="/ecommerce/add-support" element={<AddSupport />} />
         <Route
           path="/ecommerce/contract-transaction"
@@ -257,7 +259,7 @@ function App() {
         <Route path="/inbox" element={<Inbox />} />
         <Route path="/calendar" element={<Calendar />} />
 
-        <Route path="/settings/support-records" element={<SupportRecords />} />
+
         <Route
           path="/settings/support-record-table"
           element={<SupportRecordTable />}
