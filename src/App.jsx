@@ -112,6 +112,8 @@ import StatisticalDistribution from "./pages/component/StatisticalDistribution";
 import AddArticle from "./pages/ecommerce/AddArticle";
 import ERCTweenty from "./pages/ecommerce/ERCTweenty";
 import ERCTweentyOne from "./pages/ecommerce/ERCTweentyOne";
+import WalletRegContract from "./pages/ecommerce/WalletREgContract";
+import MarketContractDep from "./pages/ecommerce/MarketContractDep";
 
 function App() {
   const location = useLocation();
@@ -183,6 +185,14 @@ function App() {
           <Route
           path="/contract/erc21"
           element={<ERCTweentyOne />}
+        />
+          <Route
+          path="/contract/wallet-reg-contract"
+          element={<WalletRegContract />}
+        />
+          <Route
+          path="/contract/market-contract"
+          element={<MarketContractDep />}
         />
          <Route
           path="/contract/contract-application"
