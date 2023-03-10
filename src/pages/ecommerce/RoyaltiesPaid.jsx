@@ -4,6 +4,7 @@ import PaginationClassic from "../../components/PaginationClassic";
 import Header from "../../partials/Header";
 import Sidebar from "../../partials/Sidebar";
 import { BiEditAlt } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const RoyaltiesPaid = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -86,11 +87,11 @@ const RoyaltiesPaid = () => {
               </div>
               {/* Right: Actions */}
               <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
-                <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
+                <Link to="/market/statistical-distribution" className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
                   <span className="hidden xs:block ml-2">
                     Batch distribution
                   </span>
-                </button>
+                </Link>
               </div>
             </div>
 

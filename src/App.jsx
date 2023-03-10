@@ -108,6 +108,7 @@ import MenuManagement from "./pages/ecommerce/MenuManagement";
 import FileManagement from "./pages/ecommerce/FileManagement";
 import ConfigurationManagement from "./pages/ecommerce/ConfigurationManagement";
 import SupportRecordTable from "./pages/settings/SupportRecordTable";
+import StatisticalDistribution from "./pages/component/StatisticalDistribution";
 
 function App() {
   const location = useLocation();
@@ -133,6 +134,7 @@ function App() {
         <Route path="/market/bid-history" element={<BidHistory />} />
         <Route path="/market/royalty-income" element={<Royalty />} />
         <Route path="/market/royaltyPaid" element={<RoyaltiesPaid />} />
+        <Route path="/market/statistical-distribution" element={<StatisticalDistribution />} />
         <Route
           path="/market/royalty-statistics"
           element={<RoyaltiesStatistics />}
