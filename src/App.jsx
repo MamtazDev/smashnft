@@ -110,6 +110,8 @@ import ConfigurationManagement from "./pages/ecommerce/ConfigurationManagement";
 import SupportRecordTable from "./pages/settings/SupportRecordTable";
 import StatisticalDistribution from "./pages/component/StatisticalDistribution";
 import AddArticle from "./pages/ecommerce/AddArticle";
+import ERCTweenty from "./pages/ecommerce/ERCTweenty";
+import ERCTweentyOne from "./pages/ecommerce/ERCTweentyOne";
 
 function App() {
   const location = useLocation();
@@ -173,6 +175,14 @@ function App() {
           <Route
           path="/contract/contract-transaction"
           element={<ContractTransaction />}
+        />
+          <Route
+          path="/contract/erc20"
+          element={<ERCTweenty />}
+        />
+          <Route
+          path="/contract/erc21"
+          element={<ERCTweentyOne />}
         />
          <Route
           path="/contract/contract-application"

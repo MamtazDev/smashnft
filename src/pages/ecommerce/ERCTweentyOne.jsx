@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import PayBg from "../../images/pay-bg.jpg";
 import User from "../../images/user-64-13.jpg";
 
-const StatisticalDistribution = () => {
+const ERCTweentyOne = () => {
   return (
     <>
       <header className="bg-white border-b border-slate-200">
@@ -106,25 +106,84 @@ const StatisticalDistribution = () => {
                 />
               </div>
               <h1 className="text-xl leading-snug text-slate-800 font-semibold mb-2">
-                Statistical Distribution 🔥
+                ERC21 contract deployment 🔥
               </h1>
             </div>
-            <div className="grid grid-cols-2">
-              <div className="bg-gray-100 p-2 border">Currency</div>
-              <div className="bg-gray-100 p-2 border">Payment amount</div>
-              <div className="p-2 border">CPC</div>
-              <div className="p-2 border">75.072</div>
-            </div>
-            <div className="bg-gray-100 p-2 border">Current balance</div>
-            <div className="p-2 border">652458.2163585522</div>
+            <form>
+              <div className="space-y-4">
+                {/* 2nd row */}
+                <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
+                  <div className="flex-1">
+                    <label
+                      className="block text-sm font-medium mb-1"
+                      htmlFor="card-address"
+                    >
+                     Contract owner
+                    </label>
+                    <input
+                      id="card-address"
+                      className="form-input w-full"
+                      type="text"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <label
+                      className="block text-sm font-medium mb-1"
+                      htmlFor="card-address"
+                    >
+                      ERC721-NFTName 
+                    </label>
+                    <input
+                      id="card-address"
+                      className="form-input w-full"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-4">
+                {/* 2nd row */}
+                <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
+                  
+                  <div className="flex-1">
+                    <label
+                      className="block text-sm font-medium mb-1"
+                      htmlFor="card-address"
+                    >
+                      ERC721-NFTsymbol
+                    </label>
+                    <input
+                      id="card-address"
+                      className="form-input w-full"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
 
-            <div className="flex justify-center gap-6 mt-6">
-              <button className="border p-3 rounded-lg bg-gray-100">
-                Cancel
+              <button
+                className=" my-5 w-full bg-blue-500 text-white rounded-lg p-2"
+                type=""
+              >
+                ERC21 Contract Deployment
               </button>
-              <button className="border p-3 rounded-lg bg-blue-500 text-white">
-                Determine
-              </button>
+            </form>
+            <div className="grid grid-cols-2">
+              <div className="bg-gray-100 p-2 border">Owner address</div>
+              <div className="bg-gray-100 p-2 border">Contract address</div>
+              <div className="p-2 border overflow-hidden">
+                0x545655586235bhgf746985968bhfg
+              </div>
+              <div className="p-2 border overflow-hidden">
+                0x545655586235bhgf746985968bhfg
+              </div>
+              <div className="bg-gray-100 p-2 border">NFTName</div>
+              <div className="bg-gray-100 p-2 border">NFTSymbol</div>
+              <div className="p-2 border">TestMarket</div>
+              <div className="p-2 border">TM</div>
+              <div className="bg-gray-100 p-2 border">TX</div>
+              <div className="bg-gray-100 p-2 border"></div>
+             
             </div>
           </div>
         </div>
@@ -133,4 +192,4 @@ const StatisticalDistribution = () => {
   );
 };
 
-export default StatisticalDistribution;
+export default ERCTweentyOne;
