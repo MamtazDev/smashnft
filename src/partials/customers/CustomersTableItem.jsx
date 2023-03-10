@@ -1,5 +1,6 @@
 import React from "react";
 import { BiEditAlt } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 function CustomersTableItem(props) {
   return (
@@ -73,9 +74,9 @@ function CustomersTableItem(props) {
         <div className="text-center ">2022-01-13</div>
       </td>
       <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-        <div className="text-center text-blue-600 flex items-center gap-2">
+        <Link to="/market/nft-details" className="text-center text-blue-600 flex items-center gap-2">
           <BiEditAlt /> Details
-        </div>
+        </Link>
       </td>
     </tr>
   );

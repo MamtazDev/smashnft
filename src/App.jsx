@@ -109,8 +109,6 @@ import FileManagement from "./pages/ecommerce/FileManagement";
 import ConfigurationManagement from "./pages/ecommerce/ConfigurationManagement";
 import SupportRecordTable from "./pages/settings/SupportRecordTable";
 
-
-
 function App() {
   const location = useLocation();
 
@@ -123,54 +121,111 @@ function App() {
   return (
     <>
       <Routes>
-      <Route path="/login/home" element={<Shop />} />
-      <Route path="/login/account" element={<Account />} />
-      <Route path="/login/changePassword" element={<ChangePassword />} />
+        <Route path="/login/home" element={<Shop />} />
+        <Route path="/login/account" element={<Account />} />
+        <Route path="/login/changePassword" element={<ChangePassword />} />
+        <Route path="/market/product-list" element={<Customers />} />
+        <Route path="/market/nft-details" element={<Product />} />
+        <Route path="/market/commodities" element={<Commodities />} />
+        <Route path="/market/auction" element={<Auction />} />
+        <Route path="/market/transaction" element={<Transaction />} />
+        <Route path="/market/bid-history" element={<BidHistory />} />
+        <Route path="/market/royalty-income" element={<Royalty />} />
+        <Route path="/market/royaltyPaid" element={<RoyaltiesPaid />} />
+        <Route
+          path="/market/royalty-statistics"
+          element={<RoyaltiesStatistics />}
+        />
 
 
-      
+
+
+
+
+
+
+
         <Route exact path="/" element={<Dashboard />} />
         <Route path="/dashboard/analytics" element={<Analytics />} />
         <Route path="/dashboard/fintech" element={<Fintech />} />
-        <Route path="/ecommerce/customers" element={<Customers />} />
+
         <Route path="/ecommerce/orders" element={<Orders />} />
-        <Route path="/ecommerce/commodities" element={<Commodities />} />
-        <Route path="/ecommerce/auction" element={<Auction />} />
-        <Route path="/ecommerce/transaction" element={<Transaction />} />
-        <Route path="/ecommerce/invoices" element={<Invoices />} />
+       
       
+     
+        <Route path="/ecommerce/invoices" element={<Invoices />} />
+
         <Route path="/ecommerce/shop-2" element={<Shop2 />} />
-        <Route path="/ecommerce/product" element={<Product />} />
-        <Route path="/ecommerce/bid" element={<BidHistory />} />
-        <Route path="/ecommerce/royalty" element={<Royalty />} />
-        <Route path="/ecommerce/royaltyPaid" element={<RoyaltiesPaid />} />
-        <Route path="/ecommerce/royalty-statistics" element={<RoyaltiesStatistics />} />
-        <Route path="/ecommerce/official-products" element={<OfficialProducts />} />
+
+       
+
+       
+       
+        <Route
+          path="/ecommerce/official-products"
+          element={<OfficialProducts />}
+        />
         <Route path="/ecommerce/start-auction" element={<StartAuction />} />
         <Route path="/ecommerce/auction-record" element={<AuctionRecords />} />
         <Route path="/ecommerce/bid-record" element={<BidRecords />} />
-        <Route path="/ecommerce/auction-transaction" element={<AuctionTransaction />} />
-        <Route path="/ecommerce/collection-records" element={<CollectionRecords />} />
+        <Route
+          path="/ecommerce/auction-transaction"
+          element={<AuctionTransaction />}
+        />
+        <Route
+          path="/ecommerce/collection-records"
+          element={<CollectionRecords />}
+        />
         <Route path="/ecommerce/commodity-grp" element={<CommodityGrp />} />
-        <Route path="/ecommerce/information-type" element={<InformationType />} />
+        <Route
+          path="/ecommerce/information-type"
+          element={<InformationType />}
+        />
         <Route path="/ecommerce/add-info" element={<AddInformation />} />
         <Route path="/ecommerce/article" element={<ArticleTable />} />
         <Route path="/ecommerce/support-type" element={<SupportType />} />
         <Route path="/ecommerce/add-support" element={<AddSupport />} />
-        <Route path="/ecommerce/contract-transaction" element={<ContractTransaction />} />
-        <Route path="/ecommerce/contract-application" element={<ContractApplication />} />
+        <Route
+          path="/ecommerce/contract-transaction"
+          element={<ContractTransaction />}
+        />
+        <Route
+          path="/ecommerce/contract-application"
+          element={<ContractApplication />}
+        />
         <Route path="/ecommerce/administrator" element={<Administrator />} />
         <Route path="/ecommerce/role-management" element={<RoleManagement />} />
         <Route path="/ecommerce/menu-management" element={<MenuManagement />} />
         <Route path="/ecommerce/file-management" element={<FileManagement />} />
-        <Route path="/ecommerce/configuration-management" element={<ConfigurationManagement />} />
-        <Route path="/ecommerce/transaction-currency" element={<TransactionCurrency />} />
-        <Route path="/ecommerce/language-management" element={<LanguageManagement />} />
-        <Route path="/ecommerce/notification-types" element={<NotificationTypes />} />
-        <Route path="/ecommerce/system-configuration" element={<SystemConfiguration />} />
-        <Route path="/ecommerce/carousel-pictures" element={<CarouselPictures />} />
-        <Route path="/ecommerce/mail-configuration" element={<MailConfiguration />} />
-       
+        <Route
+          path="/ecommerce/configuration-management"
+          element={<ConfigurationManagement />}
+        />
+        <Route
+          path="/ecommerce/transaction-currency"
+          element={<TransactionCurrency />}
+        />
+        <Route
+          path="/ecommerce/language-management"
+          element={<LanguageManagement />}
+        />
+        <Route
+          path="/ecommerce/notification-types"
+          element={<NotificationTypes />}
+        />
+        <Route
+          path="/ecommerce/system-configuration"
+          element={<SystemConfiguration />}
+        />
+        <Route
+          path="/ecommerce/carousel-pictures"
+          element={<CarouselPictures />}
+        />
+        <Route
+          path="/ecommerce/mail-configuration"
+          element={<MailConfiguration />}
+        />
+
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />
         <Route path="/ecommerce/cart-3" element={<Cart3 />} />
@@ -178,7 +233,10 @@ function App() {
         <Route path="/campaigns" element={<Campaigns />} />
         <Route path="/community/users-tabs" element={<UsersTabs />} />
         <Route path="/community/users-tiles" element={<UsersTiles />} />
-        <Route path="/community/user-information" element={<UserInformation />} />
+        <Route
+          path="/community/user-information"
+          element={<UserInformation />}
+        />
         <Route path="/community/profile" element={<Profile />} />
         <Route path="/community/feed" element={<Feed />} />
         <Route path="/community/forum" element={<Forum />} />
@@ -199,11 +257,14 @@ function App() {
         <Route path="/tasks/list" element={<TasksList />} />
         <Route path="/inbox" element={<Inbox />} />
         <Route path="/calendar" element={<Calendar />} />
-      
+
         <Route path="/settings/support-records" element={<SupportRecords />} />
-        <Route path="/settings/support-record-table" element={<SupportRecordTable />} />
+        <Route
+          path="/settings/support-record-table"
+          element={<SupportRecordTable />}
+        />
         <Route path="/settings/support-wallet" element={<SupportWallet />} />
-     
+
         <Route path="/settings/notifications" element={<Notifications />} />
         <Route path="/settings/apps" element={<Apps />} />
         <Route path="/settings/plans" element={<Plans />} />
