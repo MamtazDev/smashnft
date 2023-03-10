@@ -32,24 +32,62 @@ const ContractTransaction = () => {
                 </h1>
               </div>
 
-              {/* Right: Actions */}
-              <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
-                {/* Delete button */}
-                {/* <DeleteButton selectedItems={selectedItems} /> */}
-                {/* Dropdown */}
-                <DateSelect />
-                {/* Filter button */}
-                {/* <FilterButton align="right" /> */}
-                {/* Add customer button */}
-                <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
-                  <svg
-                    className="w-4 h-4 fill-current opacity-50 shrink-0"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
-                  </svg>
-                  <span className="hidden xs:block ml-2">Add Order</span>
-                </button>
+              <div>
+                <label className="mr-2" for="status">
+                  Chain
+                </label>
+                <select className="border-none" name="status" id="status">
+                  <option>Please select the main chain</option>
+                  <option>A</option>
+                  <option>B</option>
+                  <option>C</option>
+                </select>
+              </div>
+              <div>
+                <label className="mr-2" for="status">
+                  Commodity
+                </label>
+                <input
+                  className="border-none"
+                  type="text"
+                  placeholder="please enter productID"
+                />
+              </div>
+              <div>
+                <label className="mr-2" for="status">
+                  TxHash
+                </label>
+                <input
+                  className="border-none"
+                  type="text"
+                  placeholder="please enter Transaction hash"
+                />
+              </div>
+              <div>
+                <label className="mr-2" for="status">
+                  TokenId
+                </label>
+                <input
+                  className="border-none"
+                  type="text"
+                  placeholder="please enter Token Id"
+                />
+              </div>
+              <div>
+                <label className="mr-2" for="status">
+                  Transaction user
+                </label>
+                <input
+                  className="border-none"
+                  type="text"
+                  placeholder="please enter to"
+                />
+              </div>
+              <div>
+                <label className="mr-2" for="status">
+                  Trading time
+                </label>
+                <input className="border-none" type="date" />
               </div>
             </div>
 
