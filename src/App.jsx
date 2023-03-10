@@ -109,6 +109,7 @@ import FileManagement from "./pages/ecommerce/FileManagement";
 import ConfigurationManagement from "./pages/ecommerce/ConfigurationManagement";
 import SupportRecordTable from "./pages/settings/SupportRecordTable";
 import StatisticalDistribution from "./pages/component/StatisticalDistribution";
+import AddArticle from "./pages/ecommerce/AddArticle";
 
 function App() {
   const location = useLocation();
@@ -165,6 +166,7 @@ function App() {
           element={<InformationType />}
         />
           <Route path="/content/article-management" element={<ArticleTable />} />
+          <Route path="/content/add-article" element={<AddArticle />} />
           <Route path="/content/support-type" element={<SupportType />} />
           <Route path="/content/support-records" element={<SupportRecords />} />
 
