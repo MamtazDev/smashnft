@@ -9,7 +9,9 @@ function AccountPanel() {
     <div className="grow">
       {/* Panel body */}
       <div className="p-6 space-y-6">
-        <h2 className="text-2xl text-slate-800 font-bold mb-5">My Account</h2>
+        <h2 className="text-2xl text-slate-800 font-bold mb-5">
+          Basic Information
+        </h2>
         {/* Picture */}
         <section>
           <div className="flex items-center">
@@ -36,16 +38,21 @@ function AccountPanel() {
           <div className="sm:flex sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-5">
             <div className="sm:w-1/3">
               <label className="block text-sm font-medium mb-1" htmlFor="name">
-               <span className="text-red-600">*</span> User Nickname
+                <span className="text-red-600">*</span> User Nickname
               </label>
-              <input id="name" className="form-input w-full" type="text" required/>
+              <input
+                id="name"
+                className="form-input w-full"
+                type="text"
+                required
+              />
             </div>
             <div className="sm:w-1/3">
               <label
                 className="block text-sm font-medium mb-1"
                 htmlFor="business-id"
               >
-               <span className="text-red-600">*</span> Phone number
+                <span className="text-red-600">*</span> Phone number
               </label>
               <input
                 id="business-id"
@@ -61,22 +68,26 @@ function AccountPanel() {
               >
                 <span className="text-red-600">*</span> Email
               </label>
-              <input id="location" className="form-input w-full" type="email" required />
+              <input
+                id="location"
+                className="form-input w-full"
+                type="email"
+                required
+              />
             </div>
-         
           </div>
         </section>
       </div>
       <div className="sm:w-1/3 mb-8 ml-8">
-              <div className="flex items-center gap-4">
-                <p className="font-bold">Gender</p>
-                <input type="radio" id="age1" name="age" value="30" />
-                <label for="age1">Male</label>
-                <br />
-                <input type="radio" id="age2" name="age" value="60" />
-                <label for="age2">Female</label>
-              </div>
-            </div>
+        <div className="flex items-center gap-4">
+          <p className="font-bold">Gender</p>
+          <input type="radio" id="age1" name="age" value="30" />
+          <label for="age1">Male</label>
+          <br />
+          <input type="radio" id="age2" name="age" value="60" />
+          <label for="age2">Female</label>
+        </div>
+      </div>
       {/* Panel footer */}
       <footer>
         <div className="flex flex-col px-6 py-5 border-t border-slate-200">

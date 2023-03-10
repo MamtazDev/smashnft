@@ -193,11 +193,11 @@ function App() {
         <Route path="/tasks/list" element={<TasksList />} />
         <Route path="/inbox" element={<Inbox />} />
         <Route path="/calendar" element={<Calendar />} />
-        <Route path="/settings/account" element={<Account />} />
+        <Route path="/login/account" element={<Account />} />
         <Route path="/settings/support-records" element={<SupportRecords />} />
         <Route path="/settings/support-record-table" element={<SupportRecordTable />} />
         <Route path="/settings/support-wallet" element={<SupportWallet />} />
-        <Route path="/settings/changePassword" element={<ChangePassword />} />
+        <Route path="/login/changePassword" element={<ChangePassword />} />
         <Route path="/settings/notifications" element={<Notifications />} />
         <Route path="/settings/apps" element={<Apps />} />
         <Route path="/settings/plans" element={<Plans />} />
