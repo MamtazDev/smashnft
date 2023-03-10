@@ -25,24 +25,14 @@ const FileManagement = () => {
         <main>
           <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
             {/* Page header */}
-            <div className="sm:flex flex-wrap sm:justify-between sm:items-center mb-8">
+            <div className="sm:flex flex-wrap gap-8 sm:justify-between sm:items-center mb-8">
               {/* Left: Title */}
               <div className="mb-4 sm:mb-0">
                 <h1 className="text-2xl md:text-3xl text-slate-800 font-bold">
                   File Management ✨
                 </h1>
               </div>
-
-              {/* Right: Actions */}
-              <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
-                {/* Delete button */}
-                {/* <DeleteButton selectedItems={selectedItems} /> */}
-                {/* Dropdown */}
-
-                {/* Filter button */}
-                {/* <FilterButton align="right" /> */}
-                {/* Add customer button */}
-                <div>
+              <div>
                   <label className="mr-2" for="status">
                     File name
                   </label>
@@ -102,6 +92,17 @@ const FileManagement = () => {
                     placeholder="please enter a file suffix"
                   />
                 </div>
+
+              {/* Right: Actions */}
+              <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
+                {/* Delete button */}
+                {/* <DeleteButton selectedItems={selectedItems} /> */}
+                {/* Dropdown */}
+
+                {/* Filter button */}
+                {/* <FilterButton align="right" /> */}
+                {/* Add customer button */}
+               
 
                 <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
                   <svg

@@ -166,10 +166,48 @@ function App() {
           <Route path="/content/support-type" element={<SupportType />} />
           <Route path="/content/support-records" element={<SupportRecords />} />
 
+          <Route
+          path="/contract/contract-transaction"
+          element={<ContractTransaction />}
+        />
+         <Route
+          path="/contract/contract-application"
+          element={<ContractApplication />}
+        />
+          <Route
+          path="/system/transaction-currency"
+          element={<TransactionCurrency />}
+        />
+           <Route
+          path="/system/language-management"
+          element={<LanguageManagement />}
+        />
+         <Route
+          path="/system/notification-types"
+          element={<NotificationTypes />}
+        />
+          <Route
+          path="/system/system-configuration"
+          element={<SystemConfiguration />}
+        />
+         <Route
+          path="/system/carousel-pictures"
+          element={<CarouselPictures />}
+        />
+         <Route
+          path="/system/mail-configuration"
+          element={<MailConfiguration />}
+        />
+          <Route
+          path="/system/configuration-management"
+          element={<ConfigurationManagement />}
+        />
+                <Route path="/system/support-wallet" element={<SupportWallet />} />
+                <Route path="/system/administrator" element={<Administrator />} />
 
-
-
-
+                <Route path="/system/role-management" element={<RoleManagement />} />
+        <Route path="/system/menu-management" element={<MenuManagement />} />
+        <Route path="/system/file-management" element={<FileManagement />} />
 
 
         <Route exact path="/" element={<Dashboard />} />
@@ -189,46 +227,17 @@ function App() {
       
      
         <Route path="/ecommerce/add-support" element={<AddSupport />} />
-        <Route
-          path="/ecommerce/contract-transaction"
-          element={<ContractTransaction />}
-        />
-        <Route
-          path="/ecommerce/contract-application"
-          element={<ContractApplication />}
-        />
-        <Route path="/ecommerce/administrator" element={<Administrator />} />
-        <Route path="/ecommerce/role-management" element={<RoleManagement />} />
-        <Route path="/ecommerce/menu-management" element={<MenuManagement />} />
-        <Route path="/ecommerce/file-management" element={<FileManagement />} />
-        <Route
-          path="/ecommerce/configuration-management"
-          element={<ConfigurationManagement />}
-        />
-        <Route
-          path="/ecommerce/transaction-currency"
-          element={<TransactionCurrency />}
-        />
-        <Route
-          path="/ecommerce/language-management"
-          element={<LanguageManagement />}
-        />
-        <Route
-          path="/ecommerce/notification-types"
-          element={<NotificationTypes />}
-        />
-        <Route
-          path="/ecommerce/system-configuration"
-          element={<SystemConfiguration />}
-        />
-        <Route
-          path="/ecommerce/carousel-pictures"
-          element={<CarouselPictures />}
-        />
-        <Route
-          path="/ecommerce/mail-configuration"
-          element={<MailConfiguration />}
-        />
+        
+       
+       
+    
+      
+      
+     
+       
+      
+       
+       
 
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />
@@ -264,7 +273,7 @@ function App() {
           path="/settings/support-record-table"
           element={<SupportRecordTable />}
         />
-        <Route path="/settings/support-wallet" element={<SupportWallet />} />
+
 
        
         <Route path="/settings/apps" element={<Apps />} />
