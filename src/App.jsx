@@ -133,20 +133,36 @@ function App() {
         <Route path="/market/bid-history" element={<BidHistory />} />
         <Route path="/market/royalty-income" element={<Royalty />} />
         <Route path="/market/royaltyPaid" element={<RoyaltiesPaid />} />
-        <Route path="/market/royalty-statistics" element={<RoyaltiesStatistics />}/>
+        <Route
+          path="/market/royalty-statistics"
+          element={<RoyaltiesStatistics />}
+        />
 
-
- 
         <Route
           path="/auction/official-products"
           element={<OfficialProducts />}
         />
-         <Route path="/auction/auction-record" element={<AuctionRecords />} />
-         <Route path="/auction/bid-record" element={<BidRecords />} />
-         <Route
+        <Route path="/auction/auction-record" element={<AuctionRecords />} />
+        <Route path="/auction/bid-record" element={<BidRecords />} />
+        <Route
           path="/auction/auction-transaction"
           element={<AuctionTransaction />}
         />
+
+        <Route path="/user/user-information" element={<UserInformation />} />
+
+        <Route
+          path="/user/collection-records"
+          element={<CollectionRecords />}
+        />
+        <Route path="/user/commodity-grp" element={<CommodityGrp />} />
+        <Route path="/user/notification-switch" element={<Notifications />} />
+
+
+
+
+
+
 
 
 
@@ -156,26 +172,13 @@ function App() {
         <Route path="/dashboard/fintech" element={<Fintech />} />
 
         <Route path="/ecommerce/orders" element={<Orders />} />
-       
-      
-     
+
         <Route path="/ecommerce/invoices" element={<Invoices />} />
 
         <Route path="/ecommerce/shop-2" element={<Shop2 />} />
 
-       
-
-       
-      
         <Route path="/ecommerce/start-auction" element={<StartAuction />} />
-       
-     
-     
-        <Route
-          path="/ecommerce/collection-records"
-          element={<CollectionRecords />}
-        />
-        <Route path="/ecommerce/commodity-grp" element={<CommodityGrp />} />
+
         <Route
           path="/ecommerce/information-type"
           element={<InformationType />}
@@ -232,10 +235,7 @@ function App() {
         <Route path="/campaigns" element={<Campaigns />} />
         <Route path="/community/users-tabs" element={<UsersTabs />} />
         <Route path="/community/users-tiles" element={<UsersTiles />} />
-        <Route
-          path="/community/user-information"
-          element={<UserInformation />}
-        />
+
         <Route path="/community/profile" element={<Profile />} />
         <Route path="/community/feed" element={<Feed />} />
         <Route path="/community/forum" element={<Forum />} />
@@ -264,7 +264,7 @@ function App() {
         />
         <Route path="/settings/support-wallet" element={<SupportWallet />} />
 
-        <Route path="/settings/notifications" element={<Notifications />} />
+       
         <Route path="/settings/apps" element={<Apps />} />
         <Route path="/settings/plans" element={<Plans />} />
         <Route path="/settings/billing" element={<Billing />} />
