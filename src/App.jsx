@@ -124,6 +124,7 @@ function App() {
         <Route path="/login/home" element={<Shop />} />
         <Route path="/login/account" element={<Account />} />
         <Route path="/login/changePassword" element={<ChangePassword />} />
+
         <Route path="/market/product-list" element={<Customers />} />
         <Route path="/market/nft-details" element={<Product />} />
         <Route path="/market/commodities" element={<Commodities />} />
@@ -132,15 +133,20 @@ function App() {
         <Route path="/market/bid-history" element={<BidHistory />} />
         <Route path="/market/royalty-income" element={<Royalty />} />
         <Route path="/market/royaltyPaid" element={<RoyaltiesPaid />} />
+        <Route path="/market/royalty-statistics" element={<RoyaltiesStatistics />}/>
+
+
+ 
         <Route
-          path="/market/royalty-statistics"
-          element={<RoyaltiesStatistics />}
+          path="/auction/official-products"
+          element={<OfficialProducts />}
         />
-
-
-
-
-
+         <Route path="/auction/auction-record" element={<AuctionRecords />} />
+         <Route path="/auction/bid-record" element={<BidRecords />} />
+         <Route
+          path="/auction/auction-transaction"
+          element={<AuctionTransaction />}
+        />
 
 
 
@@ -160,18 +166,11 @@ function App() {
        
 
        
-       
-        <Route
-          path="/ecommerce/official-products"
-          element={<OfficialProducts />}
-        />
+      
         <Route path="/ecommerce/start-auction" element={<StartAuction />} />
-        <Route path="/ecommerce/auction-record" element={<AuctionRecords />} />
-        <Route path="/ecommerce/bid-record" element={<BidRecords />} />
-        <Route
-          path="/ecommerce/auction-transaction"
-          element={<AuctionTransaction />}
-        />
+       
+     
+     
         <Route
           path="/ecommerce/collection-records"
           element={<CollectionRecords />}

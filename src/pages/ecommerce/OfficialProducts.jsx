@@ -5,6 +5,7 @@ import Header from "../../partials/Header";
 import Sidebar from "../../partials/Sidebar";
 import { BiEditAlt } from "react-icons/bi";
 import { RiDeleteBin5Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const OfficialProducts = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -26,7 +27,7 @@ const OfficialProducts = () => {
         <main>
           <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
             {/* Page header */}
-            <div className="sm:flex sm:justify-between sm:items-center mb-8">
+            <div className="sm:flex flex-wrap gap-8 sm:justify-between sm:items-center mb-8">
               {/* Left: Title */}
               <div className="mb-4 sm:mb-0">
                 <h1 className="text-2xl md:text-3xl text-slate-800 font-bold">
@@ -67,13 +68,7 @@ const OfficialProducts = () => {
 
               {/* Right: Actions */}
               <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
-                {/* Delete button */}
-                {/* <DeleteButton selectedItems={selectedItems} /> */}
-                {/* Dropdown */}
-                <DateSelect />
-                {/* Filter button */}
-                {/* <FilterButton align="right" /> */}
-                {/* Add customer button */}
+             
                 <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
                   <svg
                     className="w-4 h-4 fill-current opacity-50 shrink-0"
@@ -192,7 +187,10 @@ const OfficialProducts = () => {
                     </td>
                     <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="flex items-center gap-2 text-blue-600">
-                        <BiEditAlt /> Details <br />
+                        <Link className="flex items-center gap-2" to="/market/nft-details">
+                        <BiEditAlt /> Details
+                        </Link>
+                         <br />
                         <RiDeleteBin5Line /> Start auction
                       </div>
                     </td>
