@@ -46,7 +46,7 @@ const CommodityGrp = () => {
                 <label className="mr-2" for="status">
                   Group
                 </label>
-                <input type="text" placeholder="Please enter a group name" />
+                <input className="border-none" type="text" placeholder="Please enter a group name" />
               </div>
               <div>
                 <label className="mr-2" for="status">
@@ -62,7 +62,7 @@ const CommodityGrp = () => {
                 <label className="mr-2" for="status">
                   Creator
                 </label>
-                <input type="text" placeholder="Please enter creator" />
+                <input className="border-none" type="text" placeholder="Please enter creator" />
               </div>
             </div>
 
