@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import DateSelect from "../../components/DateSelect";
 import PaginationClassic from "../../components/PaginationClassic";
 import Header from "../../partials/Header";
 import Sidebar from "../../partials/Sidebar";
 
 const BidRecords = () => {
-    const [sidebarOpen, setSidebarOpen] = useState(false);
-    const [selectedItems, setSelectedItems] = useState([]);
-  
-    const handleSelectedItems = (selectedItems) => {
-      setSelectedItems([...selectedItems]);
-    };
-    return (
-        <div className="flex h-screen overflow-hidden">
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [selectedItems, setSelectedItems] = useState([]);
+
+  const handleSelectedItems = (selectedItems) => {
+    setSelectedItems([...selectedItems]);
+  };
+  return (
+    <div className="flex h-screen overflow-hidden">
       {/* Sidebar */}
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
@@ -24,7 +24,7 @@ const BidRecords = () => {
         <main>
           <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
             {/* Page header */}
-            <div className="sm:flex sm:justify-between sm:items-center mb-8">
+            <div className="sm:flex flex-wrap gap-8 sm:justify-between sm:items-center mb-8">
               {/* Left: Title */}
               <div className="mb-4 sm:mb-0">
                 <h1 className="text-2xl md:text-3xl text-slate-800 font-bold">
@@ -32,24 +32,55 @@ const BidRecords = () => {
                 </h1>
               </div>
 
-              {/* Right: Actions */}
-              <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
-                {/* Delete button */}
-                {/* <DeleteButton selectedItems={selectedItems} /> */}
-                {/* Dropdown */}
-                <DateSelect />
-                {/* Filter button */}
-                {/* <FilterButton align="right" /> */}
-                {/* Add customer button */}
-                <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
-                  <svg
-                    className="w-4 h-4 fill-current opacity-50 shrink-0"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
-                  </svg>
-                  <span className="hidden xs:block ml-2">Add Order</span>
-                </button>
+              <div>
+                <label className="mr-2" for="status">
+                  Chain
+                </label>
+                <select className="border-none" name="status" id="status">
+                  <option>Please select the main chain</option>
+                  <option>Japan</option>
+                  <option>Bangla</option>
+                </select>
+              </div>
+              <div>
+                <label className="mr-2" for="status">
+                  RecordID
+                </label>
+                <input
+                  className="border-none"
+                  type="text"
+                  placeholder="Please enter a recordID"
+                />
+              </div>
+              <div>
+                <label className="mr-2" for="status">
+                  ID
+                </label>
+                <input
+                  className="border-none"
+                  type="text"
+                  placeholder="Please enter productID"
+                />
+              </div>
+              <div>
+                <label className="mr-2" for="status">
+                  Participant
+                </label>
+                <input
+                  className="border-none"
+                  type="text"
+                  placeholder="Please enter participants"
+                />
+              </div>
+              <div>
+                <label className="mr-2" for="status">
+                  Result
+                </label>
+                <select className="border-none" name="status" id="status">
+                  <option>Please select a result</option>
+                  <option>Japan</option>
+                  <option>Bangla</option>
+                </select>
               </div>
             </div>
 
@@ -64,7 +95,9 @@ const BidRecords = () => {
                       <div className="font-semibold text-left">Chain</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">Auction record</div>
+                      <div className="font-semibold text-left">
+                        Auction record
+                      </div>
                     </th>
 
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
@@ -77,25 +110,25 @@ const BidRecords = () => {
                       <div className="font-semibold text-left">Preview</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">
-                   Participant
-                      </div>
+                      <div className="font-semibold text-left">Participant</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="font-semibold">Consume tokens</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">Amount of money</div>
+                      <div className="font-semibold text-left">
+                        Amount of money
+                      </div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="font-semibold text-left">Result</div>
                     </th>
 
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold text-left">Participation time</div>
+                      <div className="font-semibold text-left">
+                        Participation time
+                      </div>
                     </th>
-
-                    
                   </tr>
                 </thead>
 
@@ -126,7 +159,7 @@ const BidRecords = () => {
                       </div>
                     </td>
                     <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className='text-red-600'>0xjhh..jhhjk</div>
+                      <div className="text-red-600">0xjhh..jhhjk</div>
                     </td>
 
                     <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
@@ -136,14 +169,13 @@ const BidRecords = () => {
                       <div>25</div>
                     </td>
                     <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className='bg-gray-300 rounded-lg p-2'>Not winning the bid</div>
+                      <div className="bg-gray-300 rounded-lg p-2">
+                        Not winning the bid
+                      </div>
                     </td>
                     <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div>2022-01-25</div>
                     </td>
-                  
-
-                    
                   </tr>
                 </tbody>
               </table>
@@ -157,7 +189,7 @@ const BidRecords = () => {
         </main>
       </div>
     </div>
-    );
+  );
 };
 
 export default BidRecords;
