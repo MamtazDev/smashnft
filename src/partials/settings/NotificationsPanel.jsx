@@ -9,9 +9,44 @@ function NotificationsPanel() {
     <div className="grow">
       {/* Panel body */}
       <div className="p-6 space-y-6">
-        <h2 className="text-2xl text-slate-800 font-bold mb-5">
-          My Notifications
-        </h2>
+        {/* Page header */}
+        <div className="sm:flex flex-wrap gap-8 sm:justify-between sm:items-center mb-8">
+          {/* Left: Title */}
+          <div className="mb-4 sm:mb-0">
+            <h1 className="text-2xl md:text-3xl text-slate-800 font-bold">
+              Notification switch ✨
+            </h1>
+          </div>
+          <div>
+            <label className="mr-2" for="status">
+              Chain
+            </label>
+            <select name="status" id="status">
+              <option>please select main chain</option>
+              <option>English</option>
+              <option>Japan</option>
+              <option>Bangla</option>
+            </select>
+          </div>
+          <div>
+            <label className="mr-2" for="status">
+              Notice title
+            </label>
+            <select name="status" id="status">
+              <option>Notice title</option>
+              <option>English</option>
+              <option>Japan</option>
+              <option>Bangla</option>
+            </select>
+          </div>
+
+          <div>
+            <label className="mr-2" for="status">
+              Address
+            </label>
+            <input type="text" placeholder="please enter the address" />
+          </div>
+        </div>
 
         <div className="overflow-x-auto">
           <table className="table-auto w-full divide-y divide-slate-200">
