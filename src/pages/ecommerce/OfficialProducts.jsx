@@ -43,12 +43,16 @@ const OfficialProducts = () => {
                   <option>Bangla</option>
                 </select>
               </div>
-             
+
               <div>
                 <label className="mr-2" for="status">
                   Name
                 </label>
-                <input className="border-none" type="text" placeholder="Please enter a name" />
+                <input
+                  className="border-none"
+                  type="text"
+                  placeholder="Please enter a name"
+                />
               </div>
               <div>
                 <label className="mr-2" for="status">
@@ -60,7 +64,6 @@ const OfficialProducts = () => {
                   <option>Bangla</option>
                 </select>
               </div>
-            
 
               {/* Right: Actions */}
               <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
@@ -189,8 +192,8 @@ const OfficialProducts = () => {
                     </td>
                     <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="flex items-center gap-2 text-blue-600">
-                        <BiEditAlt /> Details <br/>
-                        <RiDeleteBin5Line/> Start auction
+                        <BiEditAlt /> Details <br />
+                        <RiDeleteBin5Line /> Start auction
                       </div>
                     </td>
                   </tr>
