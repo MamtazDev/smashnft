@@ -108,11 +108,12 @@ const Royalty = () => {
                     </th>
                   </tr>
                 </thead>
-
-             
-              
               </table>
-               <input className="text-center w-full py-2 mt-4" type="text" placeholder="No Data" />
+              <input
+                className="text-center w-full py-2 mt-4"
+                type="text"
+                placeholder="No Data"
+              />
             </div>
 
             {/* Pagination */}
