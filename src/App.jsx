@@ -189,6 +189,7 @@ function App() {
         <Route path="/content/add-article" element={<AddArticle />} />
         <Route path="/content/support-type" element={<SupportType />} />
         <Route path="/content/support-records" element={<SupportRecords />} />
+        <Route path="/content/add-support" element={<AddSupport />} />
 
         <Route
           path="/contract/contract-transaction"
@@ -291,7 +292,7 @@ function App() {
 
       
 
-        <Route path="/ecommerce/add-support" element={<AddSupport />} />
+       
 
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />

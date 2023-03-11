@@ -14,12 +14,12 @@ const SupportRecordTable = () => {
   return (
     <div className="flex h-screen overflow-hidden">
       {/* Sidebar */}
-      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+      {/* <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} /> */}
 
       {/* Content area */}
       <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
         {/*  Site header */}
-        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+        {/* <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} /> */}
 
         <main>
           <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
@@ -36,7 +36,7 @@ const SupportRecordTable = () => {
                 <label className="mr-2" for="status">
                   Chain
                 </label>
-                <select className="border-none" name="status" id="status">
+                <select className="border" name="status" id="status">
                   <option>Please select the main chain</option>
                   <option>A</option>
                   <option>B</option>
@@ -48,7 +48,7 @@ const SupportRecordTable = () => {
                   Wallet address
                 </label>
                 <input
-                  className="border-none"
+                  className="border"
                   type="text"
                   placeholder="please enter wallet address"
                 />
@@ -57,7 +57,7 @@ const SupportRecordTable = () => {
                 <label className="mr-2" for="status">
                   Status
                 </label>
-                <select className="border-none" name="status" id="status">
+                <select className="border" name="status" id="status">
                   <option>Please select a status</option>
                   <option>A</option>
                   <option>B</option>
@@ -127,8 +127,19 @@ const SupportRecordTable = () => {
                       <div></div>
                     </td>
 
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="text-blue-600">Delete</div>
+                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
+                      <div className="space-x-1">
+                        <button className="text-rose-500 hover:text-rose-600 rounded-full">
+                          <span className="sr-only">Delete</span>
+                          <svg
+                            className="w-8 h-8 fill-current"
+                            viewBox="0 0 32 32"
+                          >
+                            <path d="M13 15h2v6h-2zM17 15h2v6h-2z" />
+                            <path d="M20 9c0-.6-.4-1-1-1h-6c-.6 0-1 .4-1 1v2H8v2h1v10c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V13h1v-2h-4V9zm-6 1h4v1h-4v-1zm7 3v9H11v-9h10z" />
+                          </svg>
+                        </button>
+                      </div>
                     </td>
                   </tr>
                 </tbody>

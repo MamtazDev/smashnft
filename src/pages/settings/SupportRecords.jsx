@@ -4,6 +4,7 @@ import Sidebar from "../../partials/Sidebar";
 import Header from "../../partials/Header";
 import SettingsSidebar from "../../partials/settings/SettingsSidebar";
 import AccountPanel from "../../partials/settings/AccountPanel";
+import SupportRecordTable from "./SupportRecordTable";
 
 const SupportRecords = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -23,7 +24,7 @@ const SupportRecords = () => {
             <div className="mb-8">
               {/* Title */}
               <h1 className="text-2xl md:text-3xl text-slate-800 font-bold">
-                Account Support ✨
+              Support Records ✨
               </h1>
             </div>
 
@@ -73,19 +74,7 @@ const SupportRecords = () => {
                     </section>
                   </div>
 
-                  {/* Panel footer */}
-                  <footer>
-                    <div className="flex flex-col px-6 py-5 border-t border-slate-200">
-                      <div className="flex self-end">
-                        <button className="btn border-slate-200 hover:border-slate-300 text-slate-600">
-                          Cancel
-                        </button>
-                        <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white ml-3">
-                          Save Changes
-                        </button>
-                      </div>
-                    </div>
-                  </footer>
+               <SupportRecordTable/>
                 </div>
               </div>
             </div>
