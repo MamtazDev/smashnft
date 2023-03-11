@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 import Sidebar from "../../partials/Sidebar";
 import Header from "../../partials/Header";
 
-
-
-const AddArticle = () => {
+const AddTransactionToken = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <div className="flex h-screen overflow-hidden">
@@ -28,7 +26,7 @@ const AddArticle = () => {
                   <header className="mb-6">
                     {/* Title */}
                     <h1 className="text-2xl md:text-3xl text-slate-800 font-bold mb-2">
-                      Add Article ✨
+                      Add Transaction Token ✨
                     </h1>
                   </header>
                   {/* Billing Information */}
@@ -42,13 +40,13 @@ const AddArticle = () => {
                               className="block text-sm font-medium mb-1"
                               htmlFor="card-country"
                             >
-                              Languages <span className="text-rose-500">*</span>
+                              Chain <span className="text-rose-500">*</span>
                             </label>
                             <select
                               id="card-country"
                               className="form-select w-full"
                             >
-                              <option>Languages</option>
+                              <option>Please select the main chain</option>
                               <option>USA</option>
                               <option>United Kingdom</option>
                             </select>
@@ -58,14 +56,14 @@ const AddArticle = () => {
                               className="block text-sm font-medium mb-1"
                               htmlFor="card-country"
                             >
-                              Information type{" "}
+                              Token Type type{" "}
                               <span className="text-rose-500">*</span>
                             </label>
                             <select
                               id="card-country"
                               className="form-select w-full"
                             >
-                              <option>Please select information</option>
+                              <option>Please enter token type</option>
                               <option>USA</option>
                               <option>United Kingdom</option>
                             </select>
@@ -78,7 +76,7 @@ const AddArticle = () => {
                               className="block text-sm font-medium mb-1"
                               htmlFor="card-address"
                             >
-                              Title <span className="text-rose-500">*</span>
+                              Token <span className="text-rose-500">*</span>
                             </label>
                             <input
                               id="card-address"
@@ -91,22 +89,45 @@ const AddArticle = () => {
                               className="block text-sm font-medium mb-1"
                               htmlFor="card-country"
                             >
-                              Recommended{" "}
+                           Contract address
                               <span className="text-rose-500">*</span>
                             </label>
-                            <select
-                              id="card-country"
-                              className="form-select w-full"
+                            <input
+                              id="card-address"
+                              className="form-input w-full"
+                              type="text"
+                            />
+                          </div>
+                        </div>
+                        {/* 2nd row */}
+                        <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
+                       
+                          <div className="flex-1">
+                            <label
+                              className="block text-sm font-medium mb-1"
+                              htmlFor="card-country"
                             >
-                              <option>Yes</option>
-                              <option>No</option>
-                            </select>
+                         USD tex change rate
+                              <span className="text-rose-500">*</span>
+                            </label>
+                            <input
+                              id="card-address"
+                              className="form-input w-full"
+                              type="text"
+                            />
                           </div>
                         </div>
                       </div>
                       <div className="flex justify-end gap-6 my-5">
-                        <button className="bg-blue-500 text-white rounded-lg p-2" type="">Indeed Set</button>
-                        <button className="border  rounded-lg p-2" type="">Take Eliminate</button>
+                        <button
+                          className="bg-blue-500 text-white rounded-lg p-2"
+                          type=""
+                        >
+                          Indeed Set
+                        </button>
+                        <button className="border  rounded-lg p-2" type="">
+                          Take Eliminate
+                        </button>
                       </div>
                     </form>
                   </div>
@@ -120,4 +141,4 @@ const AddArticle = () => {
   );
 };
 
-export default AddArticle;
+export default AddTransactionToken;
