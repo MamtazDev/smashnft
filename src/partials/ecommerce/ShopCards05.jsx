@@ -4,7 +4,7 @@ function ShopCards05() {
   return (
     <React.Fragment>
       {/* Card 1 */}
-      <div className="col-span-full sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-sm border border-slate-200">
+      {/* <div className="col-span-full sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-sm border border-slate-200">
         <div className="flex flex-col h-full text-center p-5">
           <div className="grow mb-1">
             <div className="inline-flex justify-center items-center w-12 h-12 bg-slate-100 rounded-full mb-2">
@@ -20,10 +20,10 @@ function ShopCards05() {
             <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Explore -&gt;</a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Card 2 */}
-      <div className="col-span-full sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-sm border border-slate-200">
+      {/* <div className="col-span-full sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-sm border border-slate-200">
         <div className="flex flex-col h-full text-center p-5">
           <div className="grow mb-1">
             <div className="inline-flex justify-center items-center w-12 h-12 bg-slate-100 rounded-full mb-2">
@@ -38,10 +38,10 @@ function ShopCards05() {
             <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Explore -&gt;</a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Card 3 */}
-      <div className="col-span-full sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-sm border border-slate-200">
+      {/* <div className="col-span-full sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-sm border border-slate-200">
         <div className="flex flex-col h-full text-center p-5">
           <div className="grow mb-1">
             <div className="inline-flex justify-center items-center w-12 h-12 bg-slate-100 rounded-full mb-2">
@@ -58,10 +58,10 @@ function ShopCards05() {
             <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Explore -&gt;</a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Card 4 */}
-      <div className="col-span-full sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-sm border border-slate-200">
+      {/* <div className="col-span-full sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-sm border border-slate-200">
         <div className="flex flex-col h-full text-center p-5">
           <div className="grow mb-1">
             <div className="inline-flex justify-center items-center w-12 h-12 bg-slate-100 rounded-full mb-2">
@@ -77,7 +77,7 @@ function ShopCards05() {
             <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Explore -&gt;</a>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 {/* newwwwwwwwwwwwwww */}
@@ -122,6 +122,18 @@ function ShopCards05() {
          <h3 className='pl-5 pb-5'>Is: 0</h3>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+      
     </React.Fragment>
   );
 }

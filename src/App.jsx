@@ -123,6 +123,7 @@ import ModifyMenu from "./pages/ecommerce/ModifyMenu";
 import AddProduct from "./pages/ecommerce/AddProduct";
 import NFTMarket from "./pages/ecommerce/NFTMarket";
 import PictureConfig from "./pages/ecommerce/PictureConfig";
+import Home from "./pages/ecommerce/Home";
 
 function App() {
   const location = useLocation();
@@ -136,6 +137,7 @@ function App() {
   return (
     <>
       <Routes>
+        <Route path="/home" element={<Home />} />
         <Route path="/login/home" element={<Shop />} />
         <Route path="/login/account" element={<Account />} />
         <Route path="/login/changePassword" element={<ChangePassword />} />
