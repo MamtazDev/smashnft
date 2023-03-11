@@ -169,6 +169,10 @@ function App() {
           path="/auction/auction-transaction"
           element={<AuctionTransaction />}
         />
+          <Route
+          path="/auction/add-product"
+          element={<AddProduct />}
+        />
 
         <Route path="/user/user-information" element={<UserInformation />} />
 
@@ -260,10 +264,7 @@ function App() {
           path="/system/add-role"
           element={<AddRole />}
         />
-        <Route
-          path="/system/add-product"
-          element={<AddProduct />}
-        />
+      
         <Route
           path="/system/modify-menu"
           element={<ModifyMenu />}

@@ -87,7 +87,7 @@ const AuctionRecords = () => {
                       </div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold">Number of tokens</div>
+                      <div className="font-semibold text-left">Number of tokens</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="font-semibold text-left">Start time</div>

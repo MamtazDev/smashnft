@@ -113,7 +113,7 @@ const BidRecords = () => {
                       <div className="font-semibold text-left">Participant</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold">Consume tokens</div>
+                      <div className="font-semibold text-left">Consume tokens</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="font-semibold text-left">

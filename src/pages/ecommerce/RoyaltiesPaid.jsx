@@ -30,7 +30,7 @@ const RoyaltiesPaid = () => {
               {/* Left: Title */}
               <div className="mb-4 sm:mb-0">
                 <h1 className="text-2xl md:text-3xl text-slate-800 font-bold">
-                  Royalty Income ✨
+                  Royalty Paid ✨
                 </h1>
               </div>
               <div>
@@ -128,7 +128,7 @@ const RoyaltiesPaid = () => {
                     </th>
 
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold">Currency</div>
+                      <div className="font-semibold text-left">Currency</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="font-semibold text-left">State</div>
@@ -198,7 +198,7 @@ const RoyaltiesPaid = () => {
                     </td>
                     <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="flex items-center">
-                        <div className="flex items-center gap-2 font-medium text-blue-600">
+                        <div className="flex items-center gap-2 font-medium text-blue-600 cursor-pointer">
                           <BiEditAlt /> Details
                         </div>
                       </div>

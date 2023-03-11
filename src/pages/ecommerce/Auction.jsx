@@ -74,7 +74,7 @@ const Auction = () => {
               </div>
               <div>
                 <label className="mr-2" for="status">
-                  Sale
+                  Sale time
                 </label>
                 <input
                   className="border-none"
