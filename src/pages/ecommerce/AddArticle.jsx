@@ -34,22 +34,7 @@ const AddArticle = () => {
                       <div className="space-y-4">
                         {/* 1st row */}
                         <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
-                          <div className="flex-1">
-                            <label
-                              className="block text-sm font-medium mb-1"
-                              htmlFor="card-country"
-                            >
-                              Languages <span className="text-rose-500">*</span>
-                            </label>
-                            <select
-                              id="card-country"
-                              className="form-select w-full"
-                            >
-                              <option>Languages</option>
-                              <option>USA</option>
-                              <option>United Kingdom</option>
-                            </select>
-                          </div>
+                         
                           <div className="flex-1">
                             <label
                               className="block text-sm font-medium mb-1"

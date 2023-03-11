@@ -118,6 +118,8 @@ import AddTransactionToken from "./pages/ecommerce/AddTransactionToken";
 import AddCarousel from "./pages/ecommerce/AddCarousel";
 import AddMailConfiguration from "./pages/ecommerce/AddMailConfiguration";
 import AddMainChain from "./pages/ecommerce/AddMainChain";
+import AddRole from "./pages/ecommerce/AddRole";
+import ModifyMenu from "./pages/ecommerce/ModifyMenu";
 
 function App() {
   const location = useLocation();
@@ -240,6 +242,14 @@ function App() {
         <Route
           path="/system/add-main-chain"
           element={<AddMainChain />}
+        />
+        <Route
+          path="/system/add-role"
+          element={<AddRole />}
+        />
+        <Route
+          path="/system/modify-menu"
+          element={<ModifyMenu />}
         />
         <Route path="/system/support-wallet" element={<SupportWallet />} />
         <Route path="/system/administrator" element={<Administrator />} />
