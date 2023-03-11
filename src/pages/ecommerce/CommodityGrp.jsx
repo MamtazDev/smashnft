@@ -44,7 +44,7 @@ const CommodityGrp = () => {
               </div>
               <div>
                 <label className="mr-2" for="status">
-                  Group
+                  Group name
                 </label>
                 <input className="border-none" type="text" placeholder="Please enter a group name" />
               </div>
@@ -81,6 +81,9 @@ const CommodityGrp = () => {
                       <div className="font-semibold text-left">Type</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                      <div className="font-semibold text-left">Creator</div>
+                    </th>
+                    <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                       <div className="font-semibold text-left">Group name</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
@@ -90,10 +93,10 @@ const CommodityGrp = () => {
                       <div className="font-semibold text-left">Banner</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold">Describe</div>
+                      <div className="font-semibold text-left">Describe</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold">Creation time</div>
+                      <div className="font-semibold text-left">Creation time</div>
                     </th>
                   </tr>
                 </thead>

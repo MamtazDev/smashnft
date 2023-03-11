@@ -88,7 +88,7 @@ const CollectionRecords = () => {
                       <div className="font-semibold text-left">Collector</div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold">Collection Time</div>
+                      <div className="font-semibold text-left">Collection Time</div>
                     </th>
                   </tr>
                 </thead>

@@ -31,14 +31,14 @@ const AddInformation = () => {
                   </h2>
 
                   <div className="sm:flex sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-5">
-                    <div className="sm:w-1/3">
+                    <div >
                       <label
                         className="block text-sm font-medium mb-1"
                         htmlFor="name"
                       >
                         <span className="text-red-600">*</span> Languages
                       </label>
-                      <select>
+                      <select className="border-none">
                         <option>Please select a language</option>
                         <option>A</option>
                         <option>B</option>
@@ -46,7 +46,7 @@ const AddInformation = () => {
                         <option>D</option>
                       </select>
                     </div>
-                    <div className="sm:w-1/3">
+                    <div >
                       <label
                         className="block text-sm font-medium mb-1"
                         htmlFor="business-id"
@@ -60,7 +60,7 @@ const AddInformation = () => {
                         required
                       />
                     </div>
-                    <div className="sm:w-1/3">
+                    <div>
                       <label
                         className="block text-sm font-medium mb-1"
                         htmlFor="location"
@@ -68,7 +68,7 @@ const AddInformation = () => {
                         <span className="text-red-600">*</span> Superior
                         consultation
                       </label>
-                      <select className="w-full">
+                      <select className="w-full border-none">
                         <option>Please select superior consultation</option>
                         <option>A</option>
                         <option>B</option>

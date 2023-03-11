@@ -184,6 +184,7 @@ function App() {
         <Route path="/user/notification-switch" element={<Notifications />} />
 
         <Route path="/content/information-type" element={<InformationType />} />
+        <Route path="/content/add-info" element={<AddInformation />} />
         <Route path="/content/article-management" element={<ArticleTable />} />
         <Route path="/content/add-article" element={<AddArticle />} />
         <Route path="/content/support-type" element={<SupportType />} />
@@ -288,7 +289,7 @@ function App() {
 
         <Route path="/ecommerce/start-auction" element={<StartAuction />} />
 
-        <Route path="/ecommerce/add-info" element={<AddInformation />} />
+      
 
         <Route path="/ecommerce/add-support" element={<AddSupport />} />
 
