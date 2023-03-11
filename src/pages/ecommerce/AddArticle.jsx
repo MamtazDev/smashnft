@@ -2,9 +2,12 @@ import React, { useState } from "react";
 
 import Sidebar from "../../partials/Sidebar";
 import Header from "../../partials/Header";
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
 
 const AddArticle = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [value, setValue] = useState('');
   return (
     <div className="flex h-screen overflow-hidden">
       {/* Sidebar */}
@@ -34,7 +37,6 @@ const AddArticle = () => {
                       <div className="space-y-4">
                         {/* 1st row */}
                         <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
-                         
                           <div className="flex-1">
                             <label
                               className="block text-sm font-medium mb-1"
@@ -85,8 +87,42 @@ const AddArticle = () => {
                             </select>
                           </div>
                         </div>
+                        {/* 2nd row */}
+                        <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
+                          <div className="flex-1">
+                            <label
+                              className="block text-sm font-medium mb-1"
+                              htmlFor="card-address"
+                            >
+                              Sort <span className="text-rose-500">*</span>
+                            </label>
+                            <div className="flex items-center">
+                              <span className="bg-gray-200 px-3 py-1 border">
+                                -
+                              </span>
+
+                              <input
+                                id="card-address"
+                                className="form-input w-full"
+                                type="text"
+                                placeholder="Please enter"
+                              />
+                              <span className="bg-gray-200 px-3 py-1 border">
+                                +
+                              </span>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        {/* 2nd row */}
+                        <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
+                     
+                          <div className="flex-1">
+                          <ReactQuill style={{height:"250px"}} theme="snow" value={value} onChange={setValue} />
+                          </div>
+                        </div>
                       </div>
-                      <div className="flex justify-end gap-6 my-5">
+                      <div className="flex justify-end gap-6 my-12">
                         <button
                           className="bg-blue-500 text-white rounded-lg p-2"
                           type=""

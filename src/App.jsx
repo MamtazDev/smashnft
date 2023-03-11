@@ -121,6 +121,7 @@ import AddMainChain from "./pages/ecommerce/AddMainChain";
 import AddRole from "./pages/ecommerce/AddRole";
 import ModifyMenu from "./pages/ecommerce/ModifyMenu";
 import AddProduct from "./pages/ecommerce/AddProduct";
+import NFTMarket from "./pages/ecommerce/NFTMarket";
 
 function App() {
   const location = useLocation();
@@ -194,6 +195,10 @@ function App() {
         <Route
           path="/contract/market-contract"
           element={<MarketContractDep />}
+        />
+        <Route
+          path="/contract/nft-market"
+          element={<NFTMarket />}
         />
         <Route
           path="/contract/contract-application"
