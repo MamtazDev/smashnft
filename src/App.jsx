@@ -116,6 +116,8 @@ import WalletRegContract from "./pages/ecommerce/WalletREgContract";
 import MarketContractDep from "./pages/ecommerce/MarketContractDep";
 import AddTransactionToken from "./pages/ecommerce/AddTransactionToken";
 import AddCarousel from "./pages/ecommerce/AddCarousel";
+import AddMailConfiguration from "./pages/ecommerce/AddMailConfiguration";
+import AddMainChain from "./pages/ecommerce/AddMainChain";
 
 function App() {
   const location = useLocation();
@@ -228,8 +230,16 @@ function App() {
           element={<MailConfiguration />}
         />
         <Route
+          path="/system/add-mail-configuration"
+          element={<AddMailConfiguration />}
+        />
+        <Route
           path="/system/configuration-management"
           element={<ConfigurationManagement />}
+        />
+        <Route
+          path="/system/add-main-chain"
+          element={<AddMainChain />}
         />
         <Route path="/system/support-wallet" element={<SupportWallet />} />
         <Route path="/system/administrator" element={<Administrator />} />
