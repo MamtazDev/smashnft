@@ -120,6 +120,7 @@ import AddMailConfiguration from "./pages/ecommerce/AddMailConfiguration";
 import AddMainChain from "./pages/ecommerce/AddMainChain";
 import AddRole from "./pages/ecommerce/AddRole";
 import ModifyMenu from "./pages/ecommerce/ModifyMenu";
+import AddProduct from "./pages/ecommerce/AddProduct";
 
 function App() {
   const location = useLocation();
@@ -246,6 +247,10 @@ function App() {
         <Route
           path="/system/add-role"
           element={<AddRole />}
+        />
+        <Route
+          path="/system/add-product"
+          element={<AddProduct />}
         />
         <Route
           path="/system/modify-menu"
