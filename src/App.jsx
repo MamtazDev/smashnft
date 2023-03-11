@@ -112,7 +112,7 @@ import StatisticalDistribution from "./pages/component/StatisticalDistribution";
 import AddArticle from "./pages/ecommerce/AddArticle";
 import ERCTweenty from "./pages/ecommerce/ERCTweenty";
 import ERCTweentyOne from "./pages/ecommerce/ERCTweentyOne";
-import WalletRegContract from "./pages/ecommerce/WalletREgContract";
+import WalletRegContract from "./pages/ecommerce/WalletRegContract";
 import MarketContractDep from "./pages/ecommerce/MarketContractDep";
 import AddTransactionToken from "./pages/ecommerce/AddTransactionToken";
 import AddCarousel from "./pages/ecommerce/AddCarousel";
