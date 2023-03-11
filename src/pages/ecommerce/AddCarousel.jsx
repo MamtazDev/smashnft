@@ -98,7 +98,17 @@ const AddCarousel = () => {
                                 src="https://image.pngaaa.com/781/4773781-middle.png"
                                 alt=""
                               />
+                              
                             </div>
+                            <p>
+                                Please upload size no more than{" "}
+                                <span className="text-red-600">5MB</span> Format
+                                is{" "}
+                                <span className="text-red-600">
+                                  png/jpg/jpeg/svg
+                                </span>
+                                file
+                              </p>
                           </div>
                         </div>
                         {/* 2nd row */}

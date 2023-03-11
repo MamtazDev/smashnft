@@ -122,6 +122,7 @@ import AddRole from "./pages/ecommerce/AddRole";
 import ModifyMenu from "./pages/ecommerce/ModifyMenu";
 import AddProduct from "./pages/ecommerce/AddProduct";
 import NFTMarket from "./pages/ecommerce/NFTMarket";
+import PictureConfig from "./pages/ecommerce/PictureConfig";
 
 function App() {
   const location = useLocation();
@@ -232,6 +233,10 @@ function App() {
         <Route
           path="/system/add-carousel"
           element={<AddCarousel />}
+        />
+        <Route
+          path="/system/picture-config"
+          element={<PictureConfig />}
         />
         <Route
           path="/system/mail-configuration"
