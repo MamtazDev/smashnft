@@ -114,6 +114,8 @@ import ERCTweenty from "./pages/ecommerce/ERCTweenty";
 import ERCTweentyOne from "./pages/ecommerce/ERCTweentyOne";
 import WalletRegContract from "./pages/ecommerce/WalletREgContract";
 import MarketContractDep from "./pages/ecommerce/MarketContractDep";
+import AddTransactionToken from "./pages/ecommerce/AddTransactionToken";
+import AddCarousel from "./pages/ecommerce/AddCarousel";
 
 function App() {
   const location = useLocation();
@@ -139,7 +141,10 @@ function App() {
         <Route path="/market/bid-history" element={<BidHistory />} />
         <Route path="/market/royalty-income" element={<Royalty />} />
         <Route path="/market/royaltyPaid" element={<RoyaltiesPaid />} />
-        <Route path="/market/statistical-distribution" element={<StatisticalDistribution />} />
+        <Route
+          path="/market/statistical-distribution"
+          element={<StatisticalDistribution />}
+        />
         <Route
           path="/market/royalty-statistics"
           element={<RoyaltiesStatistics />}
@@ -165,74 +170,73 @@ function App() {
         <Route path="/user/commodity-grp" element={<CommodityGrp />} />
         <Route path="/user/notification-switch" element={<Notifications />} />
 
-        <Route
-          path="/content/information-type"
-          element={<InformationType />}
-        />
-          <Route path="/content/article-management" element={<ArticleTable />} />
-          <Route path="/content/add-article" element={<AddArticle />} />
-          <Route path="/content/support-type" element={<SupportType />} />
-          <Route path="/content/support-records" element={<SupportRecords />} />
+        <Route path="/content/information-type" element={<InformationType />} />
+        <Route path="/content/article-management" element={<ArticleTable />} />
+        <Route path="/content/add-article" element={<AddArticle />} />
+        <Route path="/content/support-type" element={<SupportType />} />
+        <Route path="/content/support-records" element={<SupportRecords />} />
 
-          <Route
+        <Route
           path="/contract/contract-transaction"
           element={<ContractTransaction />}
         />
-          <Route
-          path="/contract/erc20"
-          element={<ERCTweenty />}
-        />
-          <Route
-          path="/contract/erc21"
-          element={<ERCTweentyOne />}
-        />
-          <Route
+        <Route path="/contract/erc20" element={<ERCTweenty />} />
+        <Route path="/contract/erc21" element={<ERCTweentyOne />} />
+        <Route
           path="/contract/wallet-reg-contract"
           element={<WalletRegContract />}
         />
-          <Route
+        <Route
           path="/contract/market-contract"
           element={<MarketContractDep />}
         />
-         <Route
+        <Route
           path="/contract/contract-application"
           element={<ContractApplication />}
         />
-          <Route
+        <Route
           path="/system/transaction-currency"
           element={<TransactionCurrency />}
         />
-           <Route
+        <Route
+          path="/system/add-transaction"
+          element={<AddTransactionToken />}
+        />
+
+        <Route
           path="/system/language-management"
           element={<LanguageManagement />}
         />
-         <Route
+        <Route
           path="/system/notification-types"
           element={<NotificationTypes />}
         />
-          <Route
+        <Route
           path="/system/system-configuration"
           element={<SystemConfiguration />}
         />
-         <Route
+        <Route
           path="/system/carousel-pictures"
           element={<CarouselPictures />}
         />
-         <Route
+        <Route
+          path="/system/add-carousel"
+          element={<AddCarousel />}
+        />
+        <Route
           path="/system/mail-configuration"
           element={<MailConfiguration />}
         />
-          <Route
+        <Route
           path="/system/configuration-management"
           element={<ConfigurationManagement />}
         />
-                <Route path="/system/support-wallet" element={<SupportWallet />} />
-                <Route path="/system/administrator" element={<Administrator />} />
+        <Route path="/system/support-wallet" element={<SupportWallet />} />
+        <Route path="/system/administrator" element={<Administrator />} />
 
-                <Route path="/system/role-management" element={<RoleManagement />} />
+        <Route path="/system/role-management" element={<RoleManagement />} />
         <Route path="/system/menu-management" element={<MenuManagement />} />
         <Route path="/system/file-management" element={<FileManagement />} />
-
 
         <Route exact path="/" element={<Dashboard />} />
         <Route path="/dashboard/analytics" element={<Analytics />} />
@@ -246,22 +250,9 @@ function App() {
 
         <Route path="/ecommerce/start-auction" element={<StartAuction />} />
 
-      
         <Route path="/ecommerce/add-info" element={<AddInformation />} />
-      
-     
+
         <Route path="/ecommerce/add-support" element={<AddSupport />} />
-        
-       
-       
-    
-      
-      
-     
-       
-      
-       
-       
 
         <Route path="/ecommerce/cart" element={<Cart />} />
         <Route path="/ecommerce/cart-2" element={<Cart2 />} />
@@ -292,14 +283,11 @@ function App() {
         <Route path="/inbox" element={<Inbox />} />
         <Route path="/calendar" element={<Calendar />} />
 
-
         <Route
           path="/settings/support-record-table"
           element={<SupportRecordTable />}
         />
 
-
-       
         <Route path="/settings/apps" element={<Apps />} />
         <Route path="/settings/plans" element={<Plans />} />
         <Route path="/settings/billing" element={<Billing />} />

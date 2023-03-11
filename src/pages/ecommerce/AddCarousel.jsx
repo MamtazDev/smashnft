@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import Sidebar from "../../partials/Sidebar";
 import Header from "../../partials/Header";
 
-const AddArticle = () => {
+const AddCarousel = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <div className="flex h-screen overflow-hidden">
@@ -25,49 +26,13 @@ const AddArticle = () => {
                   <header className="mb-6">
                     {/* Title */}
                     <h1 className="text-2xl md:text-3xl text-slate-800 font-bold mb-2">
-                      Add Article ✨
+                      Add Carousel Picture ✨
                     </h1>
                   </header>
                   {/* Billing Information */}
                   <div>
                     <form>
                       <div className="space-y-4">
-                        {/* 1st row */}
-                        <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
-                          <div className="flex-1">
-                            <label
-                              className="block text-sm font-medium mb-1"
-                              htmlFor="card-country"
-                            >
-                              Languages <span className="text-rose-500">*</span>
-                            </label>
-                            <select
-                              id="card-country"
-                              className="form-select w-full"
-                            >
-                              <option>Languages</option>
-                              <option>USA</option>
-                              <option>United Kingdom</option>
-                            </select>
-                          </div>
-                          <div className="flex-1">
-                            <label
-                              className="block text-sm font-medium mb-1"
-                              htmlFor="card-country"
-                            >
-                              Information type{" "}
-                              <span className="text-rose-500">*</span>
-                            </label>
-                            <select
-                              id="card-country"
-                              className="form-select w-full"
-                            >
-                              <option>Please select information</option>
-                              <option>USA</option>
-                              <option>United Kingdom</option>
-                            </select>
-                          </div>
-                        </div>
                         {/* 2nd row */}
                         <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
                           <div className="flex-1">
@@ -75,29 +40,29 @@ const AddArticle = () => {
                               className="block text-sm font-medium mb-1"
                               htmlFor="card-address"
                             >
-                              Title <span className="text-rose-500">*</span>
+                              Picture name{" "}
+                              <span className="text-rose-500">*</span>
                             </label>
                             <input
                               id="card-address"
                               className="form-input w-full"
                               type="text"
+                              placeholder="Please enter a picture name"
                             />
                           </div>
                           <div className="flex-1">
                             <label
                               className="block text-sm font-medium mb-1"
-                              htmlFor="card-country"
+                              htmlFor="card-address"
                             >
-                              Recommended{" "}
-                              <span className="text-rose-500">*</span>
+                              Jump link <span className="text-rose-500">*</span>
                             </label>
-                            <select
-                              id="card-country"
-                              className="form-select w-full"
-                            >
-                              <option>Yes</option>
-                              <option>No</option>
-                            </select>
+                            <input
+                              id="card-address"
+                              className="form-input w-full"
+                              type="text"
+                              placeholder="lease enter a jump link"
+                            />
                           </div>
                         </div>
                       </div>
@@ -106,10 +71,10 @@ const AddArticle = () => {
                           className="bg-blue-500 text-white rounded-lg p-2"
                           type=""
                         >
-                          Indeed Set
+                          Determine
                         </button>
                         <button className="border  rounded-lg p-2" type="">
-                          Take Eliminate
+                          Cancel
                         </button>
                       </div>
                     </form>
@@ -124,4 +89,4 @@ const AddArticle = () => {
   );
 };
 
-export default AddArticle;
+export default AddCarousel;
