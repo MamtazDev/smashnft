@@ -34,6 +34,22 @@ const AddSupportWallet = () => {
                       <div className="space-y-4">
                         {/* 1st row */}
                         <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
+                        <div className="flex-1">
+                            <label
+                              className="block font-medium mb-1"
+                              htmlFor="card-country"
+                            >
+                             Wallet Icon
+                            </label>
+
+                            <div className="border-dotted border-2 p-16">
+                              <img
+                                width={200}
+                                src="https://image.pngaaa.com/781/4773781-middle.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
                           <div className="flex-1">
                             <label
                               className="block text-sm font-medium mb-1"
@@ -51,6 +67,12 @@ const AddSupportWallet = () => {
                               <option>United Kingdom</option>
                             </select>
                           </div>
+                         
+                         
+                        </div>
+                        {/* 1st row */}
+                        <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
+                        
                           <div className="flex-1">
                             <label
                               className="block text-sm font-medium mb-1"
@@ -68,9 +90,6 @@ const AddSupportWallet = () => {
                               <option>United Kingdom</option>
                             </select>
                           </div>
-                        </div>
-                        {/* 2nd row */}
-                        <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
                           <div className="flex-1">
                             <label
                               className="block text-sm font-medium mb-1"
@@ -86,6 +105,10 @@ const AddSupportWallet = () => {
                               placeholder="Please enter IOS jump link"
                             />
                           </div>
+                        </div>
+                        {/* 2nd row */}
+                        <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
+                         
                           <div className="flex-1">
                             <label
                               className="block text-sm font-medium mb-1"
@@ -101,9 +124,6 @@ const AddSupportWallet = () => {
                               placeholder="Please enter IOS download link"
                             />
                           </div>
-                        </div>
-                        {/* 2nd row */}
-                        <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
                           <div className="flex-1">
                             <label
                               className="block text-sm font-medium mb-1"
@@ -119,6 +139,10 @@ const AddSupportWallet = () => {
                               placeholder="Please enter the android jump link"
                             />
                           </div>
+                        </div>
+                        {/* 2nd row */}
+                        <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
+                         
                           <div className="flex-1">
                             <label
                               className="block text-sm font-medium mb-1"
@@ -134,7 +158,37 @@ const AddSupportWallet = () => {
                               placeholder="Please enter the android download link"
                             />
                           </div>
+                          <div className="flex-1">
+                            <label
+                              className="block text-sm font-medium mb-1"
+                              htmlFor="card-address"
+                            >
+                              Sort <span className="text-rose-500">*</span>
+                            </label>
+                            <div className="flex items-center">
+                              <span className="bg-gray-200 px-3 py-1 border">
+                                -
+                              </span>
+
+                              <input
+                                id="card-address"
+                                className="form-input w-full"
+                                type="text"
+                                placeholder="Please enter"
+                              />
+                              <span className="bg-gray-200 px-3 py-1 border">
+                                +
+                              </span>
+                            </div>
+
+
+
+
                         </div>
+                        </div>
+                      
+                        
+                      
                       </div>
                       <div className="flex justify-end gap-6 my-5">
                         <button

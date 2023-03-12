@@ -124,6 +124,7 @@ import AddProduct from "./pages/ecommerce/AddProduct";
 import NFTMarket from "./pages/ecommerce/NFTMarket";
 import PictureConfig from "./pages/ecommerce/PictureConfig";
 import Home from "./pages/ecommerce/Home";
+import AddSupportWallet from "./pages/ecommerce/AddSupportWallet";
 
 function App() {
   const location = useLocation();
@@ -272,6 +273,7 @@ function App() {
           element={<ModifyMenu />}
         />
         <Route path="/system/support-wallet" element={<SupportWallet />} />
+        <Route path="/system/add-support-wallet" element={<AddSupportWallet />} />
         <Route path="/system/administrator" element={<Administrator />} />
 
         <Route path="/system/role-management" element={<RoleManagement />} />
