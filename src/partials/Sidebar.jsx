@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 import SidebarLinkGroup from "./SidebarLinkGroup";
+import logo from '../images/logo.jpeg';
 
 function Sidebar({ sidebarOpen, setSidebarOpen }) {
   const location = useLocation();
@@ -89,7 +90,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
           </button>
           {/* Logo */}
           <NavLink end to="/" className="block">
-            <svg width="32" height="32" viewBox="0 0 32 32">
+            {/* <svg width="32" height="32" viewBox="0 0 32 32">
               <defs>
                 <linearGradient
                   x1="28.538%"
@@ -125,7 +126,9 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 d="M2.223 24.14L29.777 7.86A15.926 15.926 0 0132 16c0 8.837-7.163 16-16 16-5.864 0-10.991-3.154-13.777-7.86z"
                 fill="url(#logo-b)"
               />
-            </svg>
+            </svg> */}
+            <img width={100} className="rounded-full" src={logo} alt=""/>
+
           </NavLink>
         </div>
 
