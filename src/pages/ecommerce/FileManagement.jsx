@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import DateSelect from "../../components/DateSelect";
 import PaginationClassic from "../../components/PaginationClassic";
 import Header from "../../partials/Header";
@@ -104,6 +105,10 @@ const FileManagement = () => {
                 {/* Add customer button */}
                
 
+                <Link to="/system/configuration-management" className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
+                 
+                  <span className="hidden xs:block ml-2">Configuration management</span>
+                </Link>
                 <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
                   <svg
                     className="w-4 h-4 fill-current opacity-50 shrink-0"

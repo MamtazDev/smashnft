@@ -125,6 +125,7 @@ import NFTMarket from "./pages/ecommerce/NFTMarket";
 import PictureConfig from "./pages/ecommerce/PictureConfig";
 import Home from "./pages/ecommerce/Home";
 import AddSupportWallet from "./pages/ecommerce/AddSupportWallet";
+import MainChainInfo from "./pages/ecommerce/MainChainInfo";
 
 function App() {
   const location = useLocation();
@@ -259,6 +260,11 @@ function App() {
           path="/system/configuration-management"
           element={<ConfigurationManagement />}
         />
+        <Route
+          path="/system/main-chain-info"
+          element={<MainChainInfo />}
+        />
+       
         <Route
           path="/system/add-main-chain"
           element={<AddMainChain />}
