@@ -5,6 +5,7 @@ import Header from "../../partials/Header";
 import Sidebar from "../../partials/Sidebar";
 import { BiEditAlt } from "react-icons/bi";
 import { RiDeleteBin5Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const CarouselPictures = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -46,7 +47,7 @@ const CarouselPictures = () => {
 
               {/* Right: Actions */}
               <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
-                <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
+                <Link to="/system/add-carousel" className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
                   <svg
                     className="w-4 h-4 fill-current opacity-50 shrink-0"
                     viewBox="0 0 16 16"
@@ -54,7 +55,7 @@ const CarouselPictures = () => {
                     <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
                   </svg>
                   <span className="hidden xs:block ml-2">Newly added</span>
-                </button>
+                </Link>
               </div>
             </div>
 

@@ -5,6 +5,7 @@ import Header from "../../partials/Header";
 import Sidebar from "../../partials/Sidebar";
 import { BiEditAlt } from "react-icons/bi";
 import { RiDeleteBin5Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const MailConfiguration = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -46,7 +47,7 @@ const MailConfiguration = () => {
 
               {/* Right: Actions */}
               <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
-                <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
+                <Link to="/system/add-mail-configuration" className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
                   <svg
                     className="w-4 h-4 fill-current opacity-50 shrink-0"
                     viewBox="0 0 16 16"
@@ -54,7 +55,7 @@ const MailConfiguration = () => {
                     <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
                   </svg>
                   <span className="hidden xs:block ml-2">Newly added</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -86,14 +87,16 @@ const MailConfiguration = () => {
                       </div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold">Whether the default</div>
+                      <div className="font-semibold text-left">
+                        Whether the default
+                      </div>
                     </th>
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold">The sender</div>
+                      <div className="font-semibold text-left">The sender</div>
                     </th>
 
                     <th className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="font-semibold">Operation</div>
+                      <div className="font-semibold text-left">Operation</div>
                     </th>
                   </tr>
                 </thead>
@@ -125,9 +128,28 @@ const MailConfiguration = () => {
                       <div>0xjhgh...nvggb</div>
                     </td>
 
-                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                      <div className="flex items-center gap-2 text-blue-600">
-                        <BiEditAlt /> Edit <br /> <RiDeleteBin5Line /> Delete
+                    <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
+                      <div className="space-x-1">
+                        <button className="text-slate-400 hover:text-slate-500 rounded-full">
+                          <span className="sr-only">Edit</span>
+                          <svg
+                            className="w-8 h-8 fill-current"
+                            viewBox="0 0 32 32"
+                          >
+                            <path d="M19.7 8.3c-.4-.4-1-.4-1.4 0l-10 10c-.2.2-.3.4-.3.7v4c0 .6.4 1 1 1h4c.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4l-4-4zM12.6 22H10v-2.6l6-6 2.6 2.6-6 6zm7.4-7.4L17.4 12l1.6-1.6 2.6 2.6-1.6 1.6z" />
+                          </svg>
+                        </button>
+
+                        <button className="text-rose-500 hover:text-rose-600 rounded-full">
+                          <span className="sr-only">Delete</span>
+                          <svg
+                            className="w-8 h-8 fill-current"
+                            viewBox="0 0 32 32"
+                          >
+                            <path d="M13 15h2v6h-2zM17 15h2v6h-2z" />
+                            <path d="M20 9c0-.6-.4-1-1-1h-6c-.6 0-1 .4-1 1v2H8v2h1v10c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V13h1v-2h-4V9zm-6 1h4v1h-4v-1zm7 3v9H11v-9h10z" />
+                          </svg>
+                        </button>
                       </div>
                     </td>
                   </tr>
