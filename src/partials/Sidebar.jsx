@@ -1096,7 +1096,8 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                           <li className="mb-1 last:mb-0">
                             <SidebarLinkGroup
                               activecondition={
-                                pathname === "/" || pathname.includes("contract")
+                                pathname === "/" ||
+                                pathname.includes("contract")
                               }
                             >
                               {(handleClick, open) => {
@@ -1119,7 +1120,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                                       <div className="flex items-center justify-between">
                                         <div className="flex items-center">
                                           <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                          Deploying the Contract
+                                            Deploying the Contract
                                           </span>
                                         </div>
                                         {/* Icon */}
@@ -1153,7 +1154,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                                             }
                                           >
                                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                            ERC20 contract deployment
+                                              ERC20 contract deployment
                                             </span>
                                           </NavLink>
                                         </li>
@@ -1169,7 +1170,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                                             }
                                           >
                                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                            ERC21 contract deployment
+                                              ERC21 contract deployment
                                             </span>
                                           </NavLink>
                                         </li>
@@ -1185,7 +1186,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                                             }
                                           >
                                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                            Registry Contract Deployment
+                                              Registry Contract Deployment
                                             </span>
                                           </NavLink>
                                         </li>
@@ -1201,7 +1202,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                                             }
                                           >
                                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                            Market Contract Deployment
+                                              Market Contract Deployment
                                             </span>
                                           </NavLink>
                                         </li>
