@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 import SidebarLinkGroup from "./SidebarLinkGroup";
-import logo from '../images/logo.jpeg';
+import logo from "../images/logo.jpeg";
 
 function Sidebar({ sidebarOpen, setSidebarOpen }) {
   const location = useLocation();
@@ -127,8 +127,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 fill="url(#logo-b)"
               />
             </svg> */}
-            <img width={100} className="rounded-full" src={logo} alt=""/>
-
+            <img width={100} className="rounded-full" src={logo} alt="" />
           </NavLink>
         </div>
 
@@ -1441,76 +1440,6 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                             >
                               <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                 File Management
-                              </span>
-                            </NavLink>
-                          </li>
-                          <li className="mb-1 last:mb-0">
-                            <NavLink
-                              end
-                              to="/system/carousel-pictures"
-                              className={({ isActive }) =>
-                                "block text-slate-400 hover:text-slate-200 transition duration-150 truncate " +
-                                (isActive ? "!text-indigo-500" : "")
-                              }
-                            >
-                              <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                Carousel Pictures
-                              </span>
-                            </NavLink>
-                          </li>
-                          <li className="mb-1 last:mb-0">
-                            <NavLink
-                              end
-                              to="/system/mail-configuration"
-                              className={({ isActive }) =>
-                                "block text-slate-400 hover:text-slate-200 transition duration-150 truncate " +
-                                (isActive ? "!text-indigo-500" : "")
-                              }
-                            >
-                              <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                Mail Configuration
-                              </span>
-                            </NavLink>
-                          </li>
-                          <li className="mb-1 last:mb-0">
-                            <NavLink
-                              end
-                              to="/system/configuration-management"
-                              className={({ isActive }) =>
-                                "block text-slate-400 hover:text-slate-200 transition duration-150 truncate " +
-                                (isActive ? "!text-indigo-500" : "")
-                              }
-                            >
-                              <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                Main Chain Information Configuration
-                              </span>
-                            </NavLink>
-                          </li>
-                          <li className="mb-1 last:mb-0">
-                            <NavLink
-                              end
-                              to="/system/support-wallet"
-                              className={({ isActive }) =>
-                                "block text-slate-400 hover:text-slate-200 transition duration-150 truncate " +
-                                (isActive ? "!text-indigo-500" : "")
-                              }
-                            >
-                              <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                Supported Wallet
-                              </span>
-                            </NavLink>
-                          </li>
-                          <li className="mb-1 last:mb-0">
-                            <NavLink
-                              end
-                              to="/system/support-wallet"
-                              className={({ isActive }) =>
-                                "block text-slate-400 hover:text-slate-200 transition duration-150 truncate " +
-                                (isActive ? "!text-indigo-500" : "")
-                              }
-                            >
-                              <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                Picture Configuration
                               </span>
                             </NavLink>
                           </li>
