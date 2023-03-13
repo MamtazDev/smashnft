@@ -4,6 +4,8 @@ import Sidebar from "../../partials/Sidebar";
 import Header from "../../partials/Header";
 import ShopCards05 from "../../partials/ecommerce/ShopCards05";
 import DoubleRecharts from "../../partials/ecommerce/DoubleRecharts";
+import FintechCard03 from "../../partials/fintech/FintechCard03";
+import FintechCard01 from "../../partials/fintech/FintechCard01";
 
 const Home = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -31,9 +33,13 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="mt-12">
-                <DoubleRecharts />
-              </div>
+           
+                <div className="grid grid-cols-2 gap-6 my-12">
+                  <FintechCard03/>
+                  <FintechCard01/>
+                </div>
+                {/* <DoubleRecharts /> */}
+             
             </div>
           </div>
         </main>
