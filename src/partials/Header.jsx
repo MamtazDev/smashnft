@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import SearchModal from '../components/ModalSearch';
 import Notifications from '../components/DropdownNotifications';
 import Help from '../components/DropdownHelp';
 import UserMenu from '../components/DropdownProfile';
+import './Header.css'
 
 function Header({
   sidebarOpen,
@@ -11,6 +12,34 @@ function Header({
 }) {
 
   const [searchModalOpen, setSearchModalOpen] = useState(false)
+
+
+  // language change
+
+  useEffect(() => {
+    const script = document.createElement("script");
+
+    script.src =
+      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    script.async = true;
+    document.body.appendChild(script);
+
+    console.log('google translate',window.googleTranslateElementInit)
+    window.googleTranslateElementInit = () => {
+      new window.google.translate.TranslateElement(
+        {
+          pageLanguage: "en,ja",
+          includedLanguages: "en,ja",
+          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+        },
+        "google_translate_element"
+      );
+    };
+    return () => {
+      // document.body.removeChild(script);
+      delete window.googleTranslateElementInit;
+    };
+  }, []);
 
   return (
     <header className="sticky top-0 bg-white border-b border-slate-200 z-30">
@@ -39,6 +68,7 @@ function Header({
 
           {/* Header: Right side */}
           <div className="flex items-center space-x-3">
+          <div id="google_translate_element"></div>
             <button
               className={`w-8 h-8 flex items-center justify-center bg-slate-100 hover:bg-slate-200 transition duration-150 rounded-full ml-3 ${searchModalOpen && 'bg-slate-200'}`}
               onClick={(e) => { e.stopPropagation(); setSearchModalOpen(true); }}
