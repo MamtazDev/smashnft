@@ -11,3 +11,12 @@
 @import 'additional-styles/theme.scss';
 
 @tailwind utilities;
+
+
+body {
+    margin-top: 0 !important;
+}
+
+body.goog-te-banner-visible {
+    margin-top: 0 !important;
+}

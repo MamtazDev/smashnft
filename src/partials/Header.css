@@ -15,3 +15,9 @@
   .VIpgJd-ZVi9od-ORHb-OEVmcd{
     display: none !important;
   }
+  .VIpgJd-ZVi9od-ORHb-OEVmcd.skiptranslate{
+    display: none !important;
+  }
+  body.font-inter.antialiased.bg-slate-100.text-slate-600.sidebar-expanded {
+    top: 0px !important;
+}
